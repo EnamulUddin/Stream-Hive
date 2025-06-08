@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Stream Hive</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Mukta&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Mukta', sans-serif;
+      background-color: #353232;
+    }
+
+    .navbar {
+      background-color: #353232;
+    }
+
+    .navbar-brand {
+      font-size: 1.8rem;
+      font-weight: bold;
+      color: rgb(9, 241, 9);
+    }
+
+    .nav-link {
+      font-size: 1.1rem;
+      color: #ffffff;
+      text-decoration: none;
+    }
+
+    .nav-link:hover {
+      color: #007bff;
+    }
+
+    .jumbotron {
+      background-image: url('../In-Class/css/homepage-hero-bg.jpeg');
+      background-position: center;
+      background-size: cover;
+      color: white;
+      text-align: center;
+      padding: 100px 0;
+      margin-bottom: 30px;
+      border-radius: 15px;
+    }
+
+    .jumbotron h1,
+    .jumbotron p {
+      color: rgb(9, 241, 9);
+    }
+
+    .category-card img {
+      width: 220px;
+      height: 420px;
+      object-fit: cover;
+      border-radius: 15px;
+      transition: none !important;
+      transform: none !important;
+    }
+
+    .category-card img:hover {
+      transform: none !important;
+      transition: none !important;
+    }
+
+    .category-card p {
+      font-weight: bold;
+      font-size: 1.2rem;
+      color: #ffffff;
+    }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      background-image: none;
+      width: 3rem;
+      height: 3rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      background-color: transparent;
+      color: rgb(9, 241, 9);
+      font-size: 2rem;
+      font-weight: bold;
+    }
+
+    .carousel-control-prev-icon::before,
+    .carousel-control-next-icon::before {
+      content: '';
+    }
+
+    .carousel-control-prev::after,
+    .carousel-control-next::after {
+      font-size: 3rem;
+      color: rgb(9, 241, 9);
+      font-weight: bold;
+    }
+
+    .carousel-control-prev::after {
+      content: '<';
+    }
+
+    .carousel-control-next::after {
+      content: '>';
+    }
+
+    .custom-row {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .custom-col {
+      flex: 0 0 45%;
+      max-width: 45%;
+    }
+
+    
+    .description-box {
+      background-color: #1a1a1a; 
+      color: #ffffff;            
+      padding: 20px;
+      border-radius: 12px;
+      max-width: 800px;
+      margin: 30px auto 50px auto; 
+      box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+      font-family: 'Mukta', sans-serif;
+      line-height: 1.5;
+      text-align: center;
+    }
+
+    .description-box h3 {
+      margin-top: 0;
+      margin-bottom: 10px;
+      font-weight: 700;
+      font-size: 1.8rem;
+      color: #09f109;  
+    }
+
+    .description-box p {
+      font-size: 1.1rem;
+    }
+
+  </style>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">STREAM HIVE</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="p-5 mb-4 jumbotron" style="background-color: #353232; border-radius: 20px; text-align: center;">
+      <h1 class="display-2" style="font-size: 7.5rem; color: #00ff00; font-weight: 1000; letter-spacing: 1px;">STREAM HIVE</h1>
+    </div>
+    <div class="text-center">
+      <p class="lead" style="font-size: 5.00rem; color: #ffffff; font-weight: 600;">SUPERMAN</p>
+    </div>
+  </div>
+
+  <div id="tabCarousel" class="carousel slide my-5" data-bs-ride="carousel" data-bs-interval="3000">
+    <div class="carousel-inner">
+
+      <div class="carousel-item active">
+        <div class="custom-row">
+          <div class="custom-col">
+            <div class="category-card text-center">
+              <img src="https://cdn.mos.cms.futurecdn.net/kEnL2afSFCKizAz9voPBSP.jpg" style="width: 79.6%; height: auto;">
+            </div>
+          </div>
+          <div class="custom-col">
+            <div class="category-card text-center">
+              <img src="https://preview.redd.it/superman-2025-official-teaser-trailer-4k-x265-download-v0-5h6vqw4xg28e1.png?auto=webp&amp;s=acb99ffd6b0aed38e58fd55e441914c6f195df68" style="width: 79.5%; height: auto;">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <div class="custom-row">
+          <div class="custom-col">
+            <div class="category-card text-center">
+              <img src="https://cdn.images.express.co.uk/img/dynamic/36/590x/secondary/Superman-trailer-6162746.jpg?r=1747241417491" style="width: 75%; height: auto;">
+            </div>
+          </div>
+          <div class="custom-col">
+            <div class="category-card text-center">
+              <img src="https://www.usmagazine.com/wp-content/uploads/2024/12/everything-we-know-about-superman-legacy-cast-and-more-006.jpg?w=1600&amp;h=900&amp;crop=1&amp;quality=86&amp;strip=all" style="width: 79.2%; height: auto;">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <div class="custom-row">
+          <div class="custom-col">
+            <div class="category-card text-center">
+              <img src="https://i.kinja-img.com/image/upload/c_fill,h_675,pg_1,q_80,w_1200/9f6233cbf5e2819d727b22e32c8696e0.png" style="width: 81%; height: auto;">
+            </div>
+          </div>
+          <div class="custom-col">
+            <div class="category-card text-center">
+              <img src="https://www.hollywoodreporter.com/wp-content/uploads/2024/12/Screenshot20241219at120935%E2%80%AFPMH-2024.jpg?w=1296&amp;h=730&amp;crop=1" style="width: 81.3%; height: auto;">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<div class="text-center">
+  <p class="lead" style="font-size: 5.00rem; color: #ffffff; font-weight: 600;">MOVIE PLOT</p>
+</div>
+
+<div class="description-box">
+  <h3>SUPERMAN</h3>
+  <p>
+   The film opens with Superman already established as a hero in Metropolis. Clark Kent works at the Daily Planet alongside Lois Lane, and their professional relationship is well underway. The story begins in the midst of action, bypassing the traditional origin tale. Lex Luthor harbors a deep-seated animosity toward Superman, setting the stage for their conflict.
+   </p>
+   <p>
+    As the narrative progresses, Superman grapples with balancing his Kryptonian heritage and his human upbringing. He faces challenges that test his ideals and commitment to humanity. Lex Luthor's schemes intensify, aiming to undermine Superman's reputation and turn public opinion against him. The emergence of a formidable adversary, possibly a dark mirror of Superman, adds complexity to the hero's journey.
+    </p>
+    <p>
+  In the climax, Superman confronts the culmination of Lex Luthor's plans, facing both physical and moral trials. Through resilience and unwavering belief in hope and justice, he overcomes the obstacles, reaffirming his role as Earth's protector. The film concludes with Superman embracing his dual identity, ready to face future challenges with renewed purpose.
+  </p>
+</div>
+
+<div class="text-center">
+  <p class="lead" style="font-size: 6.00rem; color: #ffffff; font-weight: 600;">MOVIE CAST</p>
+</div>
+
+<div class="description-box">
+  <h3 style="color: #00ff00;">MAIN MOVIE CAST FOR 'SUPERMAN'</h3>
+  
+  <div class="cast-grid">
+    <div class="cast-card text-center">
+      <img src="https://i.imgur.com/FJMgohS.png" alt="David Corenswet as Clark Kent / Superman" style="width: 89%; height: auto;">
+      <p><strong>DAVID CORENSWET - CLARK KENT / SUPERMAN</strong></p>
+    </div>
+
+    <div class="cast-card text-center">
+      <img src="https://i.imgur.com/qfyGBUu.png" alt="Rachel Brosnahan as Lois Lane" style="width: 91%; height: auto;">
+      <p><strong>RACHEL BROSNAHAN - LOIS LANE</strong></p>
+    </div>
+
+    <div class="cast-card text-center">
+      <img src="https://i.imgur.com/S2WA8qY.png" alt="Nicholas Hoult as Lex Luthor" style="width: 90%; height: auto;" >
+      <p><strong>NICHOLAS HOULT - LEX LUTHOR</strong></p>
+    </div>
+
+    <div class="cast-card text-center">
+      <img src="https://i.imgur.com/sUPHSOb.png" alt="Edi Gathegi as Michael Holt / Mister Terrific" style="width: 90.2%; height: auto;">
+      <p><strong>EDI GATHEGI - MR HOLT / MR TERRIFIC</strong></p>
+    </div>
+
+    <div class="cast-card text-center">
+      <img src="https://www.hollywoodreporter.com/wp-content/uploads/2025/03/GettyImages-1482752287-H-2025.jpg?w=1296" alt="Anthony Carrigan as Rex Mason / Metamorpho" style="width: 92.6%; height: auto;">
+      <p><strong>ANTHONY CARRIGAN - REX MASON / METAMORPHO</strong></p>
+    </div>
+
+    <div class="cast-card text-center">
+      <img src="https://i.imgur.com/87MqtdG.png" alt="Nathan Fillion as Guy Gardner / Green Lantern" style="width: 85%; height: auto;">
+      <p><strong>NATHAN FILLION - GREEN LANTERN</strong></p>
+    </div>
+  </div>
+</div>
+
+<div class="text-center">
+  <p class="lead" style="font-size: 5.00rem; color: #ffffff; font-weight: 600;">MOVIE PRODUCTION</p>
+</div>
+
+<div class="description-box">
+  <h3>THE PRODUCTION FOR 'SUPERMAN'</h3>
+  <p>
+ The production of the 2025 Superman movie, directed by James Gunn, commenced on February 29, 2024, aligning with Superman's canonical birthday. Filming began in Svalbard, Norway, chosen for its Arctic-like landscapes to depict the Fortress of Solitude. The production then moved to Trilith Studios in Atlanta, Georgia, and included on-location shoots in Cleveland and Cincinnati, Ohio. Gunn's vision aimed to blend traditional Superman elements with a fresh narrative approach, emphasizing the character's humanity and moral compass.
+   </p>
+   <p>
+   To ensure high-quality visual effects, the production team allocated a full year for post-production, allowing ample time for editing, sound design, and VFX work. Gunn emphasized the importance of giving VFX artists sufficient time to perfect their craft, aiming for a visually stunning film that sets a new standard for superhero movies. The film also integrates characters from the animated DCU series "Creature Commandos," establishing a cohesive universe across different media formats.
+    </p>
+</div>
+
+
+<style>
+  :root {
+    --desc-box-width: 110%;         
+    --desc-box-padding: 20px;      
+    --desc-box-font-size: 1.5rem;  
+    --desc-box-title-size: 1.8rem; 
+  }
+
+  .description-box {
+    background-color: #1a1a1a;
+    color: #fff;
+    width: var(--desc-box-width);
+    padding: var(--desc-box-padding);
+    border-radius: 12px;
+    margin: 30px auto 50px auto;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    font-family: 'Mukta', sans-serif;
+    font-size: var(--desc-box-font-size);
+    line-height: 1.5;
+    text-align: center;
+  }
+
+  .description-box h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: var(--desc-box-title-size);
+    color: #09f109;
+  }
+
+  .description-box {
+  background-color: #262424;
+  padding: 30px;
+  margin: 30px auto;
+  border-radius: 15px;
+  color: #ffffff;
+  max-width: 95%;
+  box-shadow: 0 0 15px rgba(0, 255, 0, 0.3);
+}
+
+.cast-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  margin-top: 20px;
+}
+
+.cast-card {
+  background-color: #353232;
+  padding: 15px;
+  border-radius: 12px;
+  color: white;
+  box-shadow: 0 4px 12px rgba(0, 255, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.cast-card:hover {
+  transform: translateY(-5px);
+}
+
+.cast-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+</style>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

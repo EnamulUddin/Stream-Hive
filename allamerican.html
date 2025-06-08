@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Stream Hive</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Mukta&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Mukta', sans-serif;
+      background-color: #353232;
+    }
+
+    .navbar {
+      background-color: #353232;
+    }
+
+    .navbar-brand {
+      font-size: 1.8rem;
+      font-weight: bold;
+      color: rgb(9, 241, 9);
+    }
+
+    .nav-link {
+      font-size: 1.1rem;
+      color: #ffffff;
+      text-decoration: none;
+    }
+
+    .nav-link:hover {
+      color: #007bff;
+    }
+
+    .jumbotron {
+      background-image: url('../In-Class/css/homepage-hero-bg.jpeg');
+      background-position: center;
+      background-size: cover;
+      color: white;
+      text-align: center;
+      padding: 100px 0;
+      margin-bottom: 30px;
+      border-radius: 15px;
+    }
+
+    .jumbotron h1,
+    .jumbotron p {
+      color: rgb(9, 241, 9);
+    }
+
+    .category-card img {
+      width: 220px;
+      height: 420px;
+      object-fit: cover;
+      border-radius: 15px;
+      transition: none !important;
+      transform: none !important;
+    }
+
+    .category-card img:hover {
+      transform: none !important;
+      transition: none !important;
+    }
+
+    .category-card p {
+      font-weight: bold;
+      font-size: 1.2rem;
+      color: #ffffff;
+    }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      background-image: none;
+      width: 3rem;
+      height: 3rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      background-color: transparent;
+      color: rgb(9, 241, 9);
+      font-size: 2rem;
+      font-weight: bold;
+    }
+
+    .carousel-control-prev-icon::before,
+    .carousel-control-next-icon::before {
+      content: '';
+    }
+
+    .carousel-control-prev::after,
+    .carousel-control-next::after {
+      font-size: 3rem;
+      color: rgb(9, 241, 9);
+      font-weight: bold;
+    }
+
+    .carousel-control-prev::after {
+      content: '<';
+    }
+
+    .carousel-control-next::after {
+      content: '>';
+    }
+
+    .custom-row {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .custom-col {
+      flex: 0 0 45%;
+      max-width: 45%;
+    }
+
+    
+    .description-box {
+      background-color: #1a1a1a; 
+      color: #ffffff;            
+      padding: 20px;
+      border-radius: 12px;
+      max-width: 800px;
+      margin: 30px auto 50px auto; 
+      box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+      font-family: 'Mukta', sans-serif;
+      line-height: 1.5;
+      text-align: center;
+    }
+
+    .description-box h3 {
+      margin-top: 0;
+      margin-bottom: 10px;
+      font-weight: 700;
+      font-size: 1.8rem;
+      color: #09f109;  
+    }
+
+    .description-box p {
+      font-size: 1.1rem;
+    }
+
+  </style>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">STREAM HIVE</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="p-5 mb-4 jumbotron" style="background-color: #353232; border-radius: 20px; text-align: center;">
+      <h1 class="display-2" style="font-size: 7.5rem; color: #00ff00; font-weight: 1000; letter-spacing: 1px;">STREAM HIVE</h1>
+    </div>
+    <div class="text-center">
+      <p class="lead" style="font-size: 5.00rem; color: #ffffff; font-weight: 600;">ALL AMERICAN</p>
+    </div>
+  </div>
+
+  <div id="tabCarousel" class="carousel slide my-5" data-bs-ride="carousel" data-bs-interval="3000">
+    <div class="carousel-inner">
+
+      <div class="carousel-item active">
+        <div class="custom-row">
+          <div class="custom-col">
+            <div class="category-card text-center">
+              <img src="https://i.imgur.com/nJOt6Kk.png" style="width: 73.7%; height: auto;">
+            </div>
+          </div>
+          <div class="custom-col">
+            <div class="category-card text-center">
+              <img src="https://i.imgur.com/nW8T2kK.png" style="width: 74%; height: auto;">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <div class="custom-row">
+          <div class="custom-col">
+            <div class="category-card text-center">
+              <img src="https://i.imgur.com/EQla8Dy.png" style="width: 75.5%; height: auto;">
+            </div>
+          </div>
+          <div class="custom-col">
+            <div class="category-card text-center">
+              <img src="https://i.imgur.com/JvI8l1O.png" style="width: 75.5%; height: auto;">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <div class="custom-row">
+          <div class="custom-col">
+            <div class="category-card text-center">
+              <img src="https://i.imgur.com/jn9AMvw.png" style="width: 75%; height: auto;">
+            </div>
+          </div>
+          <div class="custom-col">
+            <div class="category-card text-center">
+              <img src="https://i.imgur.com/8B6eqJa.png" style="width: 78%; height: auto;">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<div class="text-center">
+  <p class="lead" style="font-size: 5.00rem; color: #ffffff; font-weight: 600;">SERIES PLOT</p>
+</div>
+
+<div class="description-box">
+  <h3>ALL AMERICAN</h3>
+  <p>
+All American is a sports drama inspired by the life of professional football player Spencer Paysinger. It follows Spencer James, a talented high school football player from Crenshaw, South Los Angeles, who is recruited to play for Beverly Hills High, sparking a culture clash between two very different worlds. As Spencer navigates life between his home in Crenshaw and the privileged community of Beverly Hills, he faces personal struggles, identity issues, family drama, and social pressures. The show explores themes of race, class, loyalty, and ambition, highlighting how football becomes a vehicle for growth, opportunity, and reconciliation. Through wins, losses, betrayals, and redemption, Spencer and those around him strive to figure out who they are and where they truly belong, both on and off the field.
+   </p>
+</div>
+
+<div class="text-center">
+  <p class="lead" style="font-size: 6.00rem; color: #ffffff; font-weight: 600;">SERIES CAST</p>
+</div>
+
+<div class="description-box">
+  <h3 style="color: #00ff00;">MAIN SERIES CAST FOR 'ALL AMERICAN'</h3>
+  
+  <div class="cast-grid">
+    <div class="cast-card text-center">
+      <img src="https://i.imgur.com/2ED1WYb.png" alt="Daniel Ezra as Spencer James" style="width: 91%; height: auto;">
+      <p><strong>DANIEL EZRA - SPENCER JAMES</strong></p>
+    </div>
+
+    <div class="cast-card text-center">
+      <img src="https://i.imgur.com/yTrO0FQ.png" alt="Bre-Z as Tamia Coop" style="width: 89.3%; height: auto;">
+      <p><strong>BRE-Z - TAMIA COOP</strong></p>
+    </div>
+
+    <div class="cast-card text-center">
+      <img src="https://i.imgur.com/0IFtNgJ.png" alt="Greata Onieogou as Layla Keating" style="width: 92.1%; height: auto;" >
+      <p><strong>GRETA ONIEOGOU - LAYLA KEATING</strong></p>
+    </div>
+
+    <div class="cast-card text-center">
+      <img src="https://i.imgur.com/5OYnWtf.png" alt="Samantha Logan as Olivia Baker" style="width: 89.7%; height: auto;">
+      <p><strong>SAMANTHA LOGAN - OLIVIA BAKER</strong></p>
+    </div>
+
+    <div class="cast-card text-center">
+      <img src="https://i.imgur.com/MTLwpXO.png" alt="Micheal Evans as Jordan Baker" style="width: 91%; height: auto;">
+      <p><strong>MICHEAL EVANS - JORDAN BAKER</strong></p>
+    </div>
+
+    <div class="cast-card text-center">
+      <img src="https://i.imgur.com/PlEz42V.png" alt="Cody Christian as Asher Adams" style="width: 89.15%; height: auto;">
+      <p><strong>CODY CHRISTIAN - ASHER ADAMS</strong></p>
+    </div>
+
+    <div class="cast-card text-center">
+      <img src="https://i.imgur.com/Mrvz9Yy.png" alt="Karimah Westbrook as Grace James" style="width: 86%; height: auto;">
+      <p><strong>KARIMAH WESTBROOK - GRACE JAMES</strong></p>
+    </div>
+
+    <div class="cast-card text-center">
+      <img src="https://i.imgur.com/q9UlvWe.png" alt="Taye Diggs as Billy Baker" style="width: 81.5%; height: auto;">
+      <p><strong>TAYE DIGGS - BILLY BAKER</strong></p>
+    </div>
+
+    <div class="cast-card text-center">
+      <img src="https://i.imgur.com/BWHBobW.png" alt="Monet Mazur as Laura Baker" style="width: 88.3%; height: auto;">
+      <p><strong>MONET MAZUR - LAURA BAKER</strong></p>
+    </div>
+</div>
+
+<div class="text-center">
+  <p class="lead" style="font-size: 5.00rem; color: #ffffff; font-weight: 600;">SEASON RECAP</p>
+</div>
+
+<div class="description-box">
+  <h3>SEASON 1</h3>
+  <p>
+Spencer James is recruited by Coach Billy Baker to transfer from South Crenshaw High to Beverly Hills High, in an effort to give him a better future and a shot at the NFL. As Spencer adjusts to his new environment, he struggles with feeling out of place, balancing his loyalty to his roots and building a new life in Beverly Hills. He becomes entangled in the personal lives of his new teammates and classmates, especially Olivia and Jordan Baker, Coach Baker’s children. Secrets come to light about Spencer’s connection to Billy, and family tensions rise on all sides. The season ends with Spencer being torn between returning to Crenshaw or staying in Beverly Hills, as his two worlds begin to collide.
+  </p>
+   <h3>SEASON 2</h3>
+  <p>
+Spencer chooses to return to South Crenshaw High to help revive the struggling football program and honor the memory of his late father, who once coached there. His decision creates friction with his Beverly Hills friends and teammates. Meanwhile, Olivia battles addiction and begins to confront her own identity issues. Coop becomes increasingly involved with gang activity, putting herself and others in danger. Tensions build between Coach Baker and his family, especially after past secrets are revealed. The season dives deeper into social issues affecting the community, including violence, systemic inequality, and the weight of second chances.
+   </p>
+   <h3>SEASON 3</h3>
+  <p>
+The season explores the aftermath of Spencer’s shoulder injury and how it affects his future in football. He begins training with Coach Baker again, who has taken a job at South Crenshaw. Jordan faces his own struggles with leadership and responsibility, while Olivia continues her recovery and activism. Spencer and Layla’s relationship evolves but is strained by lingering feelings and emotional baggage. Coop continues her music career but faces setbacks when violence from her past resurfaces. As college recruiting intensifies, each character begins making decisions that could impact their futures, with growing pressure to succeed both personally and athletically.
+   </p>
+   <h3>SEASON 4</h3>
+  <p>
+After a dramatic shooting at Coop’s concert, the characters are forced to deal with the consequences and trauma. Spencer begins his senior year with major decisions looming, including his commitment to play football at a Division I college. Layla expands her role in the music industry, Olivia steps into journalism and advocacy, and Coop tries to move away from the street life for good. Jordan and Simone’s relationship faces major changes with Simone preparing for life at Bringston University. The season balances intense emotional arcs with major transitions into adulthood, highlighting the challenges of graduation, future planning, and redefining one’s path.
+   </p>
+   <h3>SEASON 5</h3>
+  <p>
+The story jumps forward as several characters begin their college journeys. Spencer, Jordan, Olivia, and Simone navigate new relationships, opportunities, and personal challenges at Bringston and GAU (Golden Angeles University). Spencer struggles with being a leader on a competitive college football team, while Olivia uncovers a major scandal involving the university’s athletics program. Jordan starts finding his own voice outside of his father’s shadow, and Coop begins studying law while still pursuing her music career. The season explores themes of independence, accountability, and the growing pains of stepping into adulthood while still carrying the weight of the past.
+   </p>
+   <h3>SEASON 6</h3>
+  <p>
+As the characters settle into college life, they begin to fully face the realities of balancing ambition, relationships, and mental health. Spencer’s football future is threatened by injuries and high-pressure expectations, and his relationship with Olivia is tested as they pursue separate goals. Jordan steps up as a true leader on the field and in life, while Olivia’s investigative journalism leads to consequences that ripple across the university. Layla expands her record label, stepping into a powerful role in the music industry. Coop juggles law school, justice work, and her growing responsibility as a mentor in the community. The season brings deeper maturity to each character’s arc, showing how they grow from teenagers into young adults navigating love, loss, purpose, and legacy.
+   </p>
+   <h3>SEASON 7</h3>
+  <p>
+In Season 7 of All American, the narrative shifts focus following Spencer James' departure after his marriage to Olivia and their move to New York. The spotlight turns to Jordan Baker, Layla Keating, and Coop as they navigate adulthood while mentoring a new generation of Beverly Hills and South Crenshaw High students. Jordan steps into his father's legacy as South Crenshaw's quarterback coach, grappling with the challenges of leadership and forming unexpected bonds, particularly with Khalil, a talented player facing personal struggles. Layla balances her roles as a music producer and club owner, seeking purpose beyond her early successes. Coop embarks on her law school journey, confronting past demons and new relationships. The season introduces fresh faces like KJ, Beverly High's new quarterback, and his father, Coach Cassius, intensifying the Beverly-Crenshaw rivalry. The season culminates in a suspenseful championship game between the two schools, ending on a cliffhanger that leaves the outcome unresolved, symbolizing the ongoing personal and professional challenges faced by the characters.
+   </p>
+</div>
+
+
+<style>
+  :root {
+    --desc-box-width: 110%;         
+    --desc-box-padding: 20px;      
+    --desc-box-font-size: 1.5rem;  
+    --desc-box-title-size: 1.8rem; 
+  }
+
+  .description-box {
+    background-color: #1a1a1a;
+    color: #fff;
+    width: var(--desc-box-width);
+    padding: var(--desc-box-padding);
+    border-radius: 12px;
+    margin: 30px auto 50px auto;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    font-family: 'Mukta', sans-serif;
+    font-size: var(--desc-box-font-size);
+    line-height: 1.5;
+    text-align: center;
+  }
+
+  .description-box h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: var(--desc-box-title-size);
+    color: #09f109;
+  }
+
+  .description-box {
+  background-color: #262424;
+  padding: 30px;
+  margin: 30px auto;
+  border-radius: 15px;
+  color: #ffffff;
+  max-width: 95%;
+  box-shadow: 0 0 15px rgba(0, 255, 0, 0.3);
+}
+
+.cast-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  margin-top: 20px;
+}
+
+.cast-card {
+  background-color: #353232;
+  padding: 15px;
+  border-radius: 12px;
+  color: white;
+  box-shadow: 0 4px 12px rgba(0, 255, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.cast-card:hover {
+  transform: translateY(-5px);
+}
+
+.cast-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+</style>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

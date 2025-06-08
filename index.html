@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Stream Hive</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Mukta&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Mukta', sans-serif;
+      background-color: #353232;
+    }
+
+    .navbar {
+      background-color: #353232;
+    }
+
+    .navbar-brand {
+      font-size: 1.8rem;
+      font-weight: bold;
+      color: rgb(9, 241, 9);
+    }
+
+    .nav-link {
+      font-size: 1.1rem;
+      color: #ffffff;
+      text-decoration: none;
+    }
+
+    .nav-link:hover {
+      color: #007bff;
+    }
+
+    .jumbotron {
+      background-image: url('../In-Class/css/homepage-hero-bg.jpeg');
+      background-position: center;
+      background-size: cover;
+      color: white;
+      text-align: center;
+      padding: 100px 0;
+      margin-bottom: 30px;
+      border-radius: 15px;
+    }
+
+    .jumbotron h1,
+    .jumbotron p {
+      color: rgb(9, 241, 9);
+    }
+
+    .category-card img {
+      width: 220px;
+      height: 420px;
+      object-fit: cover;
+      border-radius: 15px;
+      transition: transform 0.3s ease;
+    }
+
+    .category-card img:hover {
+      transform: scale(1.05);
+    }
+
+    .category-card p {
+      font-weight: bold;
+      font-size: 1.2rem;
+      color: #ffffff;
+    }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      background-image: none;
+      width: 3rem;
+      height: 3rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      background-color: transparent;
+      color: rgb(9, 241, 9);
+      font-size: 2rem;
+      font-weight: bold;
+    }
+
+    .carousel-control-prev-icon::before,
+    .carousel-control-next-icon::before {
+      content: '';
+    }
+
+    .carousel-control-prev::after,
+    .carousel-control-next::after {
+      font-size: 3rem;
+      color: rgb(9, 241, 9);
+      font-weight: bold;
+    }
+
+    .carousel-control-prev::after {
+      content: '<';
+    }
+
+    .carousel-control-next::after {
+      content: '>';
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">STREAM HIVE</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+  <div class="p-5 mb-4 jumbotron" style="background-color: #353232; border-radius: 20px; text-align: center;">
+    <h1 class="display-2" style="font-size: 7.5rem; color: #00ff00; font-weight: 1000; letter-spacing: 2px;">STREAM HIVE</h1>
+    <p class="lead" style="font-size: 1.75rem; color: #ffffff; font-weight: 600;">KNOW WHATS WORTH WATCHING</p>
+  </div>
+</div>
+
+  <hr style="border: none; height: 8px; background-color: rgb(9, 241, 9); margin: 50px auto; width: 85%; border-radius: 5px;">
+
+<div class="container">
+  <div class="row mb-4">
+    <div class="col text-center">
+      <h2 style="color: rgb(253, 255, 253); font-weight: bold; font-size: 2.5rem;">UPCOMING / IN THEATRES RIGHT NOW</h2>
+    </div>
+  </div>
+
+  <div id="tabCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="row justify-content-center">
+          <div class="col-md-4">
+            <div class="category-card text-center">
+              <a href="finaldestinationbloodline.html">
+                <img src="https://i.imgur.com/AiyghA1.png" alt="Image" style="width: 66.4%; height: auto;">
+                <p class="mt-2">FINAL DESTINATION: BLOODLINES</p>
+              </a>
+            </div>
+          </div>
+         <div class="col-md-4">
+  <div class="category-card text-center">
+    <a href="minecraft.html">
+      <img src="https://i.imgur.com/hMwLtr4.png" alt="A Minecraft Movie" style="width: 68%; height: auto;">
+      <p class="mt-2">A MINECRAFT MOVIE</p>
+    </a>
+  </div>
+</div>
+  <div class="col-md-4">
+  <div class="category-card text-center">
+    <a href="thunderbolts.html">
+      <img src="https://i.imgur.com/9mh19Yx.png" alt="THUNDERBOLTS" style="width: 270px; height: 420px;">
+      <p class="mt-2">THUNDERBOLTS</p>
+    </a>
+  </div>
+</div>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <div class="row justify-content-center">
+         <div class="col-md-4">
+  <div class="category-card text-center">
+    <a href="sinners.html">
+      <img src="https://i.imgur.com/JR1mWy9.png" alt="SINNERS" style="width: 67%; height: auto;">
+      <p class="mt-2">SINNERS</p>
+    </a>
+  </div>
+</div>
+          <div class="col-md-4">
+  <div class="category-card text-center">
+    <a href="theaccountant2.html">
+      <img src="https://i.imgur.com/mSLJ3na.png" alt="THE ACCOUNTANT 2" style="width: 69.8%; height: auto;">
+      <p class="mt-2">THE ACCOUNTANT 2</p>
+    </a>
+  </div>
+</div>
+          <div class="col-md-4">
+  <div class="category-card text-center">
+    <a href="missionimpossible.html">
+      <img src="https://i.imgur.com/TzIIDdm.png" alt="MISSION IMPOSSIBLE - THE FINAL RECKONING" style="width: 67.5%; height: auto;">
+      <p class="mt-2">MISSION IMPOSSIBLE - THE FINAL RECKONING</p>
+    </a>
+  </div>
+</div>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <div class="row justify-content-center">
+          <div class="col-md-4">
+  <div class="category-card text-center">
+    <a href="lilo&stitch.html">
+      <img src="https://i.imgur.com/QYPcQkJ.png" alt="LILO & STITCH" style="width: 66.5%; height: auto;">
+      <p class="mt-2">LILO & STITCH</p>
+    </a>
+  </div>
+</div>
+         <div class="col-md-4">
+  <div class="category-card text-center">
+    <a href="karatekidlegend.html">
+      <img src="https://i.imgur.com/mBRdcnP.png" alt="KARATE KID: LEGENDS" style="width: 68%; height: auto;">
+      <p class="mt-2">KARATE KID: LEGENDS</p>
+    </a>
+  </div>
+</div>
+         <div class="col-md-4">
+  <div class="category-card text-center">
+    <a href="ballerina.html">
+      <img src="https://i.imgur.com/f6vnLgV.png" alt="BALLERINA" style="width: 69%; height: auto;">
+      <p class="mt-2">BALLERINA</p>
+    </a>
+  </div>
+</div>
+        </div>
+      </div>
+      
+      <div class="carousel-item">
+        <div class="row justify-content-center">
+          <div class="col-md-4">
+            <div class="category-card text-center">
+              <a href="sonicthehedgehog.html">
+                <img src="https://i.imgur.com/JUg9CQx.png" alt="SONIC THE HEDGEHOG 3" style="width: 66%; height: auto;">
+                <p class="mt-2">SONIC THE HEDGEHOG 3</p>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="category-card text-center">
+              <a href="superman.html">
+                <img src="https://i.imgur.com/t9mnRIF.png" alt="SUPERMAN" style="width: 67%; height: auto;">
+                <p class="mt-2">SUPERMAN</p>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="category-card text-center">
+              <a href="jurassicpark.html">
+                <img src="https://i.imgur.com/FNbd6Cz.png" alt="Image" style="width: 70.5%; height: auto;">
+                <p class="mt-2">JURASSIC PARK: REBIRTH</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+ <button class="carousel-control-prev" type="button" data-bs-target="#tabCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#tabCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</div>
+
+<hr style="border: none; height: 8px; background-color: rgb(9, 241, 9); margin: 50px auto; width: 85%; border-radius: 5px;">
+
+<div class="container mt-5">
+  <div class="row mb-4">
+    <div class="col text-center">
+      <h2 style="color: rgb(243, 247, 243); font-weight: bold; font-size: 2.5rem;">TRENDING TV SHOWS</h2>
+    </div>
+  </div>
+
+  <div id="tvCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="row justify-content-center">
+          <div class="col-md-4">
+            <div class="category-card text-center">
+              <a href="suits.html">
+                <img src="https://i.imgur.com/58ouPkt.png" alt="SUITS" style="width: 73%; height: auto;">
+                <p class="mt-2">SUITS: THE ORIGINAL</p>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="category-card text-center">
+              <a href="riverdale.html">
+                <img src="https://i.imgur.com/uGpPyeX.png" alt="Riverdale" style="width: 68.4%; height: auto;">
+                <p class="mt-2">RIVERDALE</p>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="category-card text-center">
+              <a href="prisonbreak.html">
+                <img src="https://i.imgur.com/Yzza9yR.png" alt="Prison Break" style="width: 73.5%; height: auto;">
+                <p class="mt-2">PRISON BREAK</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <div class="row justify-content-center">
+          <div class="col-md-4">
+            <div class="category-card text-center">
+              <a href="therookie.html">
+                <img src="https://i.imgur.com/p5LFDVB.png" alt="The Rookie" style="width: 65.4%; height: auto;">
+                <p class="mt-2">THE ROOKIE</p>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="category-card text-center">
+              <a href="swat.html">
+                <img src="https://i.imgur.com/wtj64oL.png" alt="S.W.A.T" style="width: 68%; height: auto;">
+                <p class="mt-2">S.W.A.T</p>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="category-card text-center">
+              <a href="breakingbad.html">
+                <img src="https://i.imgur.com/gpHjdVj.png" alt="Breaking Bad" style="width: 71.5%; height: auto;">
+                <p class="mt-2">BREAKING BAD</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <div class="row justify-content-center">
+          <div class="col-md-4">
+            <div class="category-card text-center">
+              <a href="allamerican.html">
+                <img src="https://i.imgur.com/AWa8zKM.png" alt="All American" style="width: 67.5%; height: auto;">
+                <p class="mt-2">ALL AMERICAN</p>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="category-card text-center">
+              <a href="moneyheist.html">
+                <img src="https://i.imgur.com/9UE4ndW.png" alt="Money Heist" style="width: 65%; height: auto;">
+                <p class="mt-2">MONEY HEIST</p>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="category-card text-center">
+              <a href="manifest.html">
+                <img src="https://i.imgur.com/Z69OQaM.png" alt="Manifest" style="width: 70%; height: auto;">
+                <p class="mt-2">MANIFEST</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+     <button class="carousel-control-prev" type="button" data-bs-target="#tvCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#tvCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</div>
+
+<hr style="border: none; height: 8px; background-color: rgb(9, 241, 9); margin: 50px auto; width: 85%; border-radius: 5px;">
+
+<div class="container mt-5">
+  <div class="row mb-4">
+    <div class="col text-center">
+      <h2 style="color: rgb(9, 241, 9); font-weight: bold; font-size: 2.5rem;">
+        POPULAR MOVIES RIGHT NOW
+      </h2>
+    </div>
+  </div>
+  <div class="row" id="now-playing">
+  </div>
+</div>
+
+<div class="container mt-5">
+  <div class="row mb-4">
+    <div class="col text-center">
+      <h2 style="color: rgb(9, 241, 9); font-weight: bold; font-size: 2.5rem;">
+        POPULAR TV SHOWS RIGHT NOW
+      </h2>
+    </div>
+  </div>
+  <div class="row" id="popular-tvshows">
+  </div>
+</div>
+
+<script>
+  const apiKey = 'e1cceca334af4abc9604d5813bc8de95';
+
+  const nowPlayingURL = `https://api.themoviedb.org/3/movie/now_playing?api_key=${apiKey}&language=en-US&page=1`;
+  const popularTVShowsURL = `https://api.themoviedb.org/3/tv/popular?api_key=${apiKey}&language=en-US&page=1`;
+
+  async function fetchMovies(url, containerId) {
+    try {
+      const response = await fetch(url);
+      const data = await response.json();
+
+      const container = document.getElementById(containerId);
+      data.results.slice(0, 12).forEach(movie => {
+        const movieCard = document.createElement('div');
+        movieCard.classList.add('col-md-4', 'mb-4');
+        movieCard.innerHTML = `
+          <div class="category-card text-center">
+            <a href="movie.html?id=${movie.id}" style="text-decoration: none;">
+              <img src="https://image.tmdb.org/t/p/w500${movie.poster_path}" alt="${movie.title}" style="width: 68%; height: auto; border-radius: 15px;">
+              <p class="mt-2" style="color: white; font-weight: bold;">${movie.title}</p>
+            </a>
+          </div>
+        `;
+        container.appendChild(movieCard);
+      });
+    } catch (error) {
+      console.error('Error fetching movies:', error);
+    }
+  }
+
+  async function fetchTVShows(url, containerId) {
+    try {
+      const response = await fetch(url);
+      const data = await response.json();
+
+      const container = document.getElementById(containerId);
+      data.results.slice(0, 12).forEach(show => {
+        const showCard = document.createElement('div');
+        showCard.classList.add('col-md-4', 'mb-4');
+        showCard.innerHTML = `
+          <div class="category-card text-center">
+            <a href="tvshow.html?id=${show.id}" style="text-decoration: none;">
+              <img src="https://image.tmdb.org/t/p/w500${show.poster_path}" alt="${show.name}" style="width: 68%; height: auto; border-radius: 15px;">
+              <p class="mt-2" style="color: white; font-weight: bold;">${show.name}</p>
+            </a>
+          </div>
+        `;
+        container.appendChild(showCard);
+      });
+    } catch (error) {
+      console.error('Error fetching TV shows:', error);
+    }
+  }
+
+  document.addEventListener('DOMContentLoaded', () => {
+    fetchMovies(nowPlayingURL, 'now-playing');
+    fetchTVShows(popularTVShowsURL, 'popular-tvshows');
+  });
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

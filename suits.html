@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Stream Hive</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Mukta&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Mukta', sans-serif;
+      background-color: #353232;
+    }
+
+    .navbar {
+      background-color: #353232;
+    }
+
+    .navbar-brand {
+      font-size: 1.8rem;
+      font-weight: bold;
+      color: rgb(9, 241, 9);
+    }
+
+    .nav-link {
+      font-size: 1.1rem;
+      color: #ffffff;
+      text-decoration: none;
+    }
+
+    .nav-link:hover {
+      color: #007bff;
+    }
+
+    .jumbotron {
+      background-image: url('../In-Class/css/homepage-hero-bg.jpeg');
+      background-position: center;
+      background-size: cover;
+      color: white;
+      text-align: center;
+      padding: 100px 0;
+      margin-bottom: 30px;
+      border-radius: 15px;
+    }
+
+    .jumbotron h1,
+    .jumbotron p {
+      color: rgb(9, 241, 9);
+    }
+
+    .category-card img {
+      width: 220px;
+      height: 420px;
+      object-fit: cover;
+      border-radius: 15px;
+      transition: none !important;
+      transform: none !important;
+    }
+
+    .category-card img:hover {
+      transform: none !important;
+      transition: none !important;
+    }
+
+    .category-card p {
+      font-weight: bold;
+      font-size: 1.2rem;
+      color: #ffffff;
+    }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      background-image: none;
+      width: 3rem;
+      height: 3rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      background-color: transparent;
+      color: rgb(9, 241, 9);
+      font-size: 2rem;
+      font-weight: bold;
+    }
+
+    .carousel-control-prev-icon::before,
+    .carousel-control-next-icon::before {
+      content: '';
+    }
+
+    .carousel-control-prev::after,
+    .carousel-control-next::after {
+      font-size: 3rem;
+      color: rgb(9, 241, 9);
+      font-weight: bold;
+    }
+
+    .carousel-control-prev::after {
+      content: '<';
+    }
+
+    .carousel-control-next::after {
+      content: '>';
+    }
+
+    .custom-row {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .custom-col {
+      flex: 0 0 45%;
+      max-width: 45%;
+    }
+
+    
+    .description-box {
+      background-color: #1a1a1a; 
+      color: #ffffff;            
+      padding: 20px;
+      border-radius: 12px;
+      max-width: 800px;
+      margin: 30px auto 50px auto; 
+      box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+      font-family: 'Mukta', sans-serif;
+      line-height: 1.5;
+      text-align: center;
+    }
+
+    .description-box h3 {
+      margin-top: 0;
+      margin-bottom: 10px;
+      font-weight: 700;
+      font-size: 1.8rem;
+      color: #09f109;  
+    }
+
+    .description-box p {
+      font-size: 1.1rem;
+    }
+
+  </style>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">STREAM HIVE</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="p-5 mb-4 jumbotron" style="background-color: #353232; border-radius: 20px; text-align: center;">
+      <h1 class="display-2" style="font-size: 7.5rem; color: #00ff00; font-weight: 1000; letter-spacing: 1px;">STREAM HIVE</h1>
+    </div>
+    <div class="text-center">
+      <p class="lead" style="font-size: 5.00rem; color: #ffffff; font-weight: 600;">SUITS</p>
+    </div>
+  </div>
+
+  <div id="tabCarousel" class="carousel slide my-5" data-bs-ride="carousel" data-bs-interval="3000">
+    <div class="carousel-inner">
+
+      <div class="carousel-item active">
+        <div class="custom-row">
+          <div class="custom-col">
+            <div class="category-card text-center">
+              <img src="https://i.imgur.com/QqyVnc4.png" style="width: 73.5%; height: auto;">
+            </div>
+          </div>
+          <div class="custom-col">
+            <div class="category-card text-center">
+              <img src="https://i.imgur.com/j2uT22g.png" style="width: 75%; height: auto;">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <div class="custom-row">
+          <div class="custom-col">
+            <div class="category-card text-center">
+              <img src="https://i.imgur.com/nmnOYGp.png" style="width: 72%; height: auto;">
+            </div>
+          </div>
+          <div class="custom-col">
+            <div class="category-card text-center">
+              <img src="https://i.imgur.com/PrUjqpe.png" style="width: 72%; height: auto;">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <div class="custom-row">
+          <div class="custom-col">
+            <div class="category-card text-center">
+              <img src="https://i.imgur.com/EaLUN7b.png" style="width: 70.7%; height: auto;">
+            </div>
+          </div>
+          <div class="custom-col">
+            <div class="category-card text-center">
+              <img src="https://i.imgur.com/qskqxOV.png" style="width: 73.1%; height: auto;">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<div class="text-center">
+  <p class="lead" style="font-size: 5.00rem; color: #ffffff; font-weight: 600;">SERIES PLOT</p>
+</div>
+
+<div class="description-box">
+  <h3>SUITS</h3>
+  <p>
+   *Suits* is an American legal drama television series created by Aaron Korsh that originally aired on the USA Network from 2011 to 2019, running for nine seasons and totaling 134 episodes. The series is set in a high-powered New York City corporate law firm and follows the story of Harvey Specter, one of the city's most successful and charming attorneys, who is known for his ruthless efficiency and sharp intellect. In a surprising twist of fate, Harvey meets Mike Ross, a brilliant young man with a photographic memory who never graduated from law school but possesses an extraordinary legal mind. Despite knowing that hiring an unlicensed lawyer is illegal and could destroy both their careers, Harvey brings Mike on as his associate, forming a risky alliance that becomes the central thread of the show. From that moment forward, the series delves into their efforts to win complex legal cases while protecting the dangerous secret of Mike's lack of credentials. Alongside them are several key figures who shape the story in powerful and personal ways, including Jessica Pearson, the commanding and sophisticated managing partner of the firm who balances strength with strategy; Donna Paulsen, Harvey’s fiercely loyal confidante and legal secretary with unmatched intuition; Rachel Zane, a dedicated and intelligent paralegal with dreams of becoming a lawyer who eventually forms a romantic bond with Mike; and Louis Litt, the quirky, emotional, and highly talented attorney who both clashes with and grows alongside Harvey and Mike. As the series progresses, the law firm undergoes numerous transformations, internal power struggles, and name changes, reflecting the shifting alliances and personal evolutions of its main characters. What begins as a show centered around a secret soon expands into a complex narrative about loyalty, ambition, love, and redemption, where each character is tested by both personal and professional dilemmas. The show is known for its fast-paced dialogue, stylish setting, memorable one-liners, and the unique chemistry among its cast members, which helped build a devoted fan base around the world. Suits ultimately explores themes such as what it means to succeed, the price of integrity, and how the lines between right and wrong can blur in the world of high-stakes law. With a mix of emotional depth, courtroom drama, and character-driven storytelling, the series became a standout in the legal drama genre and found a second life in global popularity through streaming platforms long after its original broadcast ended.
+   </p>
+</div>
+
+<div class="text-center">
+  <p class="lead" style="font-size: 6.00rem; color: #ffffff; font-weight: 600;">SERIES CAST</p>
+</div>
+
+<div class="description-box">
+  <h3 style="color: #00ff00;">MAIN SERIES CAST FOR 'SUITS'</h3>
+  
+  <div class="cast-grid">
+    <div class="cast-card text-center">
+      <img src="https://i.imgur.com/NfgEVzZ.png" alt="Patrick J. Adams as Michael James Ross" style="width: 89%; height: auto;">
+      <p><strong>PATRICK J. ADAMS - MIKE ROSS</strong></p>
+    </div>
+
+    <div class="cast-card text-center">
+      <img src="https://i.imgur.com/6kpeSxY.png" alt="Gabriel Macht as Harvey Specter" style="width: 91%; height: auto;">
+      <p><strong>GABRIEL MACHT - HARVEY SPECTER</strong></p>
+    </div>
+
+    <div class="cast-card text-center">
+      <img src="https://i.imgur.com/i7wIffP.png" alt="Meghan Markle as Rachel Zane" style="width: 83%; height: auto;" >
+      <p><strong>MEGHAN MARKLE - RACHEL ZANE</strong></p>
+    </div>
+
+    <div class="cast-card text-center">
+      <img src="https://i.imgur.com/5UWRVCk.png" alt="Sarah Rafferty as Donna Paulsen" style="width: 81%; height: auto;">
+      <p><strong>SARAH RAFFERTY - DONNA PAULSEN</strong></p>
+    </div>
+
+    <div class="cast-card text-center">
+      <img src="https://i.imgur.com/aPxgvlV.png" alt="Gina Torres as Jessica Pearson" style="width: 84.8%; height: auto;">
+      <p><strong>GINA TORRES - JESSICA PEARSON</strong></p>
+    </div>
+
+    <div class="cast-card text-center">
+      <img src="https://i.imgur.com/l0tcMwn.png" alt="Rick Hoffman as Louis Litt" style="width: 84.3%; height: auto;">
+      <p><strong>RICK HOFFMAN - LOUIS LITT</strong></p>
+    </div>
+
+    <div class="cast-card text-center">
+      <img src="https://i.imgur.com/zhdwtIf.png" alt="Amanda Schull as Katrina Bennett" style="width: 83%; height: auto;">
+      <p><strong>AMANDA SCHULL - KATRINA BENNETT</strong></p>
+    </div>
+
+    <div class="cast-card text-center">
+      <img src="https://i.imgur.com/XSeUGYs.png" alt="Dule Hill as Alex Williams" style="width: 89%; height: auto;">
+      <p><strong>DULE HILL - ALEX WILLIAMS</strong></p>
+    </div>
+
+    <div class="cast-card text-center">
+      <img src="https://i.imgur.com/tupK7HG.png" alt="Katherine Heigl as Samantha Wheeler" style="width: 88%; height: auto;">
+      <p><strong>KATHERINE HEIGL - SAMANTHA WHEELER</strong></p>
+    </div>
+</div>
+
+<div class="text-center">
+  <p class="lead" style="font-size: 5.00rem; color: #ffffff; font-weight: 600;">SEASON RECAP</p>
+</div>
+
+<div class="description-box">
+  <h3>SEASON 1</h3>
+  <p>
+ Mike Ross, a university expellee with a photographic memory, makes money by taking the LSAT and the bar examination for others. He does this to pay for his grandmother's living expenses, as she was his primary caregiver after both his parents died in a car accident when he was 11. In the pilot, Mike agrees to deliver a briefcase of cannabis for his best friend Trevor, a drug dealer, for a large payout. Mike astutely avoids being arrested in a sting, only to stumble into a job interview with Harvey Specter, a supremely self-assured senior partner at the prestigious Pearson Hardman, a law firm specializing in corporate law and one that only hires Harvard graduates. Harvey is impressed by Mike's tenacity and knowledge of the law and hires him as an associate, despite Mike's not having a license to practice law. Together they try cases while maintaining Mike's secret from the rest of the firm, though Harvey's insightful legal secretary, Donna Paulsen, finds out almost immediately. Mike meets Rachel Zane, an ambitious paralegal he is immediately attracted to, while trying to impress managing partner Jessica Pearson and avoid the suspicions of junior partner Louis Litt.
+   </p>
+   <h3>SEASON 2</h3>
+  <p>
+Jessica learns Mike's secret, but other issues take precedence when co-founding partner Daniel Hardman, who left the firm in disgrace, returns in a power bid for control of the firm. Tensions rise as Jessica and Harvey find themselves opposed by Louis, who sides with Hardman after being promised a promotion to senior partner. Mike begins a romantic relationship with Rachel but wants to tell her the truth about his lack of qualification. Harvey forbids him from doing this and so Mike breaks up with her. He pursues other women after his grandmother's sudden death. Harvey and Donna face accusations of burying evidence and must uncover the truth while keeping incriminating evidence from Hardman, who wants to use it to leverage a managing partner position. The increasing threat from Hardman forces Jessica into a merger with a major British international law firm called Darby International, that's owned and managed by internationally renowned London corporate lawyer Edward Darby. Ultimately, Mike reveals his secret to Rachel.
+   </p>
+   <h3>SEASON 3</h3>
+  <p>
+ Darby's presence in the firm gives Harvey leverage to seek a position as a named partner. Meanwhile, the merger causes Louis to clash with his British counterpart from Darby International, Nigel Alexander Nesbitt. Darby International client, British oil tycoon Ava Hessington, draws Harvey into a lengthy trial against his former mentor during his time as an assistant district attorney at the New York County District Attorney's Office, former District Attorney Cameron Dennis, and the lawsuit turns into a murder charge. Realizing that his fraud cannot continue forever, Mike leaves the newly renamed Pearson Specter for a job as an investment banker at Sidwell Investment Group, a hedge fund and investment management firm founded and spearheaded by Jonathan Sidwell.
+   </p>
+   <h3>SEASON 4</h3>
+  <p>
+ Mike's new job puts him and Harvey on opposite sides of a takeover battle, causing U.S. Securities and Exchange Commission prosecutor Sean Cahill and the entire SEC to accuse them of collusion. To satisfy Harvey, Louis goes the distance with shady billionaire investor Charles Forstman through an illegal route. When Mike is fired, Louis goes to extreme lengths to persuade Mike to return to Pearson Specter rather than work for Forstman, as working for him might expose Louis's wrongdoing. To do that, Louis demands that Jessica rehire Mike Ross. When Louis realizes Mike never went to Harvard, he extorts Jessica into rehiring him with the promise of making him a named partner, as he has long wanted. Mike proposes to Rachel; Donna leaves Harvey to work for Louis.
+   </p>
+   <h3>SEASON 5</h3>
+  <p>
+ Harvey struggles with losing Donna and begins to open up to therapist Paula Agard about his broken relationship with his mother. Louis's insecurity and desire to undermine Harvey create an opening for Jack Soloff, an ambitious partner whom Hardman is manipulating. Rachel's wedding plans and her relationship with her parents are overshadowed by Mike's secret. Mike and Harvey both resign to protect their future and the firm's respectively, but Mike is abruptly arrested for fraud. More and more people involved realize the allegations are true, and facing tenacious federal prosecutor Assistant US Attorney for the US Attorney's Office for the Southern District of New York Anita Gibbs, Mike accepts a plea bargain, pleads guilty, and turns himself in so that no one else will go to jail. Mike and Rachel decide to get married before he is imprisoned. At the wedding, Mike realizes that it isn't right and tells Rachel that he will not marry her now, but if she still wants him in two years, he will marry her after getting out of prison. Harvey escorts him to prison, saying their last few goodbyes. Jessica, Louis, and Donna return to the firm, but find every employee has left for another firm.
+   </p>
+   <h3>SEASON 6</h3>
+  <p>
+ A two-year prison sentence puts Mike at the mercy of Frank Gallo, an inmate with a grudge against Harvey. At Pearson Specter Litt, few employees remain to help. Rachel works an Innocence Project case for her law professor at Columbia University; Jessica assists pro bono but is distracted from matters at the firm and chooses to leave to pursue her own life. Mike's cellmate Kevin Miller proves pivotal in a deal Harvey made with Sean Cahill, in which Mike turns on Kevin in order for Sean to get to his father-in-law, investment firm head William Sutter, for fraud in exchange for Mike's freedom, which he ultimately wins when he secretly catches a murder attempt by Frank on camera. He struggles with his fraud being public knowledge but obtains a job as legal consultant/supervisor at a legal clinic called Eastside Legal Clinic. Harvey helps both Rachel and Mike pass the bar and persuades Mike to return to the firm.
+   </p>
+   <h3>SEASON 7</h3>
+  <p>
+ Everyone at the firm struggles to adjust to Jessica's absence. Donna takes a position as COO, and Harvey's friend Alex Williams joins the team. Harvey begins dating Paula; Louis' sessions with his own German therapist, Stan Lipschitz, have mixed results. Rachel begins her career as an attorney, having passed the bar. Mike continues to work pro bono cases at the clinic, with Harvey's blessing, but one of the cases puts Alex, Harvey, and others at risk. Louis and Head of Admissions for Columbia University Sheila Sasz reconnect, as does Jessica with her family in Chicago. Mike and Rachel accept an offer to found and run their own public interest law firm in Seattle that takes on class-action suits, and get married before leaving. As the season closes, a case that puts Specter Litt in danger is the work of top lawyer Robert Zane's partners, Ellen Rand and Eric Kaldor. When Zane finds out, he joins forces with Specter Litt.
+   </p>
+   <h3>SEASON 8</h3>
+  <p>
+After a brief conflict over who will become managing partner of the newly created firm, it is quickly resolved that Robert will (with Donna remaining COO), and the firm is renamed Zane Specter Litt. Robert hires a new senior partner, his right-hand and fixer Samantha Wheeler. After a season-long battle between Wheeler and Alex Williams over who will be added first as a name partner, both names are ultimately added to the wall. Louis learns that Sheila is pregnant. Former ADA and ex–Pearson Hardman senior associate Katrina Bennett makes senior partner and struggles with romantic feelings for her married personal associate. Donna and Harvey finally admit their feelings for one another, but Donna's mishandling of client/boyfriend Thomas Kessler forces Zane to sacrifice his legal career for the good of the firm, and he is disbarred.
+   </p>
+   <h3>SEASON FINALE</h3>
+  <p>
+With Robert now disbarred, Faye Richardson, a special master from the bar, is sent to take control and oversee the firm as acting managing partner due to the perception of the underhanded tactics it has used for years. Faye is out to dismantle and destroy the firm but has a few skeletons of her own that can be used to take her down. At the end of the season, Louis marries Sheila, Sheila gives birth to their baby, Harvey marries Donna, and they move to Seattle to be with Mike and Rachel. Louis makes Katrina a name partner and remains to lead the firm, now known as Litt Wheeler Williams Bennett.
+   </p>
+</div>
+
+
+<style>
+  :root {
+    --desc-box-width: 110%;         
+    --desc-box-padding: 20px;      
+    --desc-box-font-size: 1.5rem;  
+    --desc-box-title-size: 1.8rem; 
+  }
+
+  .description-box {
+    background-color: #1a1a1a;
+    color: #fff;
+    width: var(--desc-box-width);
+    padding: var(--desc-box-padding);
+    border-radius: 12px;
+    margin: 30px auto 50px auto;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    font-family: 'Mukta', sans-serif;
+    font-size: var(--desc-box-font-size);
+    line-height: 1.5;
+    text-align: center;
+  }
+
+  .description-box h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: var(--desc-box-title-size);
+    color: #09f109;
+  }
+
+  .description-box {
+  background-color: #262424;
+  padding: 30px;
+  margin: 30px auto;
+  border-radius: 15px;
+  color: #ffffff;
+  max-width: 95%;
+  box-shadow: 0 0 15px rgba(0, 255, 0, 0.3);
+}
+
+.cast-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  margin-top: 20px;
+}
+
+.cast-card {
+  background-color: #353232;
+  padding: 15px;
+  border-radius: 12px;
+  color: white;
+  box-shadow: 0 4px 12px rgba(0, 255, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.cast-card:hover {
+  transform: translateY(-5px);
+}
+
+.cast-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+</style>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

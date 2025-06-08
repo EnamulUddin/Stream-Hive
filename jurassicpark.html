@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Stream Hive</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Mukta&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Mukta', sans-serif;
+      background-color: #353232;
+    }
+
+    .navbar {
+      background-color: #353232;
+    }
+
+    .navbar-brand {
+      font-size: 1.8rem;
+      font-weight: bold;
+      color: rgb(9, 241, 9);
+    }
+
+    .nav-link {
+      font-size: 1.1rem;
+      color: #ffffff;
+      text-decoration: none;
+    }
+
+    .nav-link:hover {
+      color: #007bff;
+    }
+
+    .jumbotron {
+      background-image: url('../In-Class/css/homepage-hero-bg.jpeg');
+      background-position: center;
+      background-size: cover;
+      color: white;
+      text-align: center;
+      padding: 100px 0;
+      margin-bottom: 30px;
+      border-radius: 15px;
+    }
+
+    .jumbotron h1,
+    .jumbotron p {
+      color: rgb(9, 241, 9);
+    }
+
+    .category-card img {
+      width: 220px;
+      height: 420px;
+      object-fit: cover;
+      border-radius: 15px;
+      transition: none !important;
+      transform: none !important;
+    }
+
+    .category-card img:hover {
+      transform: none !important;
+      transition: none !important;
+    }
+
+    .category-card p {
+      font-weight: bold;
+      font-size: 1.2rem;
+      color: #ffffff;
+    }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      background-image: none;
+      width: 3rem;
+      height: 3rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      background-color: transparent;
+      color: rgb(9, 241, 9);
+      font-size: 2rem;
+      font-weight: bold;
+    }
+
+    .carousel-control-prev-icon::before,
+    .carousel-control-next-icon::before {
+      content: '';
+    }
+
+    .carousel-control-prev::after,
+    .carousel-control-next::after {
+      font-size: 3rem;
+      color: rgb(9, 241, 9);
+      font-weight: bold;
+    }
+
+    .carousel-control-prev::after {
+      content: '<';
+    }
+
+    .carousel-control-next::after {
+      content: '>';
+    }
+
+    .custom-row {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .custom-col {
+      flex: 0 0 45%;
+      max-width: 45%;
+    }
+
+    
+    .description-box {
+      background-color: #1a1a1a; 
+      color: #ffffff;            
+      padding: 20px;
+      border-radius: 12px;
+      max-width: 800px;
+      margin: 30px auto 50px auto; 
+      box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+      font-family: 'Mukta', sans-serif;
+      line-height: 1.5;
+      text-align: center;
+    }
+
+    .description-box h3 {
+      margin-top: 0;
+      margin-bottom: 10px;
+      font-weight: 700;
+      font-size: 1.8rem;
+      color: #09f109;  
+    }
+
+    .description-box p {
+      font-size: 1.1rem;
+    }
+
+  </style>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">STREAM HIVE</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="p-5 mb-4 jumbotron" style="background-color: #353232; border-radius: 20px; text-align: center;">
+      <h1 class="display-2" style="font-size: 7.5rem; color: #00ff00; font-weight: 1000; letter-spacing: 1px;">STREAM HIVE</h1>
+    </div>
+    <div class="text-center">
+      <p class="lead" style="font-size: 5.00rem; color: #ffffff; font-weight: 600;">JURASSIC PARK REBIRTH</p>
+    </div>
+  </div>
+
+  <div id="tabCarousel" class="carousel slide my-5" data-bs-ride="carousel" data-bs-interval="3000">
+    <div class="carousel-inner">
+
+      <div class="carousel-item active">
+        <div class="custom-row">
+          <div class="custom-col">
+            <div class="category-card text-center">
+              <img src="https://i.imgur.com/NewV8xn.png" style="width: 76%; height: auto;">
+            </div>
+          </div>
+          <div class="custom-col">
+            <div class="category-card text-center">
+              <img src="https://i.imgur.com/T1Nco3s.png" style="width: 74%; height: auto;">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <div class="custom-row">
+          <div class="custom-col">
+            <div class="category-card text-center">
+              <img src="https://bloody-disgusting.com/wp-content/uploads/2024/12/Screenshot-2024-12-18-111148.png" style="width: 80%; height: auto;">
+            </div>
+          </div>
+          <div class="custom-col">
+            <div class="category-card text-center">
+              <img src="https://i.imgur.com/9t4U4Cb.png" style="width: 71%; height: auto;">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <div class="custom-row">
+          <div class="custom-col">
+            <div class="category-card text-center">
+              <img src="https://i.imgur.com/5MjoQ4d.png" style="width: 79.7%; height: auto;">
+            </div>
+          </div>
+          <div class="custom-col">
+            <div class="category-card text-center">
+              <img src="https://i.imgur.com/ICdLnVI.png" style="width: 78.3%; height: auto;">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<div class="text-center">
+  <p class="lead" style="font-size: 5.00rem; color: #ffffff; font-weight: 600;">MOVIE PLOT</p>
+</div>
+
+<div class="description-box">
+  <h3>JURASSIC PARK REBIRTH</h3>
+  <p>
+  Years after the fall of Isla Nublar, a powerful biotech corporation called Genetek secretly builds a new dinosaur facility deep in the South American jungle, known as Eden. Marketed as a scientific sanctuary focused on peaceful coexistence with dinosaurs, Eden claims to use advanced technology to control aggression in the creatures. Maisie Lockwood, now an adult, is lured to Eden when she discovers that her unique cloned DNA has been used to create a new generation of hybrids. Alongside returning chaos theorist Dr. Ian Malcolm and a former special forces operative Leo Cruz, Maisie begins to suspect that Eden’s mission is far more sinister than it appears.
+   </p>
+   <p>
+    A devastating storm hits Eden, knocking out the neural systems that keep the dinosaurs docile and releasing genetically enhanced hybrids, including the deadly and intelligent Thanatokar. In the chaos, Maisie uncovers Genetek’s real plan: to weaponize dinosaurs for military use, using her DNA as the foundation. As dinosaurs escape into the surrounding jungle and nearby villages, the survivors must fight to stay alive while exposing Genetek’s secret operations. Tensions rise as Dr. Elara Morrow, Eden’s director, tries to salvage the embryos and escape, believing the hybrids represent evolution’s next step rather than a mistake to be undone.
+    </p>
+    <p>
+  In a final attempt to prevent a global catastrophe, Maisie and Leo work together to activate a failsafe system that will neutralize the hybrids. Ian Malcolm broadcasts the truth to the world, warning again of humanity’s arrogance in playing god. As Thanatokar closes in, Maisie sacrifices her remaining DNA sample to lure the hybrids into a trap, triggering the destruction of the facility. Eden is obliterated, and Genetek’s crimes are exposed. Though some dinosaurs escape into the wild, a fragile new balance begins, suggesting a future where humans and dinosaurs might share the planet in uneasy harmony. The film ends with a quiet image of dinosaurs roaming freely in nature, accompanied by the haunting reminder that life, once again, has found a way.
+  </p>
+</div>
+
+<div class="text-center">
+  <p class="lead" style="font-size: 6.00rem; color: #ffffff; font-weight: 600;">MOVIE CAST</p>
+</div>
+
+<div class="description-box">
+  <h3 style="color: #00ff00;">MAIN MOVIE CAST FOR 'SUPERMAN'</h3>
+  
+  <div class="cast-grid">
+    <div class="cast-card text-center">
+      <img src="https://i.imgur.com/RAX2LJO.png" alt="Scarlett Johansson as Zora Bennett" style="width: 88.7%; height: auto;">
+      <p><strong>SCARLETT JOHANSSON - ZORA BENNET</strong></p>
+    </div>
+
+    <div class="cast-card text-center">
+      <img src="https://i.imgur.com/tClAqkr.png" alt="Mahershala Ali as Duncan Kincaid" style="width: 90.8%; height: auto;">
+      <p><strong>MAHERSHALA ALI - DUNCAN KINCAID</strong></p>
+    </div>
+
+    <div class="cast-card text-center">
+      <img src="https://i.imgur.com/JWmvfdc.png" alt="Jonathan Bailey as Dr. Henry Loomis" style="width: 91.3%; height: auto;" >
+      <p><strong>JONATHAN BAILEY - DR. HENRY LOOMIS</strong></p>
+    </div>
+
+    <div class="cast-card text-center">
+      <img src="https://i.imgur.com/oV31nMV.png" alt="Rupert Friend as Martin Krebs" style="width: 89.6%; height: auto;">
+      <p><strong>RUPERT FRIEND - MARTIN KREBS</strong></p>
+    </div>
+
+    <div class="cast-card text-center">
+      <img src="https://i.imgur.com/QENazNS.png" alt="Manuel Garcia-Rulfo as Reuben Delgado" style="width: 87%; height: auto;">
+      <p><strong>MANUEL GARCIA-RULFO - REUBEN DELGADO</strong></p>
+    </div>
+
+    <div class="cast-card text-center">
+      <img src="https://i.imgur.com/2DqnaL6.png" alt="Luna Blaise as Teresa Delgado" style="width: 93%; height: auto;">
+      <p><strong>LUNA BLAISE - TERESA DELGADO</strong></p>
+    </div>
+
+    <div class="cast-card text-center">
+      <img src="https://i.imgur.com/VmLP55f.png" alt="David Iacono as Xavier Dobbs" style="width: 93%; height: auto;">
+      <p><strong>DAVID IACONO - XAIVER DOBBS</strong></p>
+    </div>
+
+    <div class="cast-card text-center">
+      <img src="https://i.imgur.com/FoaxvOL.png" alt="Audrina Miranda as Isabella Delgado" style="width: 89.9%; height: auto;">
+      <p><strong>AUDRINA MIRANDA - ISABELLA DELGADO</strong></p>
+    </div>
+
+    <div class="cast-card text-center">
+      <img src="https://i.imgur.com/UcjUN0l.png" alt="Philippine Velge as a member of Zora's team" style="width: 88.8%; height: auto;">
+      <p><strong>PHILIPPINE VELGE - ZORA TEAM MEMBER</strong></p>
+    </div>
+  </div>
+</div>
+
+<div class="text-center">
+  <p class="lead" style="font-size: 5.00rem; color: #ffffff; font-weight: 600;">MOVIE PRODUCTION</p>
+</div>
+
+<div class="description-box">
+  <h3>THE PRODUCTION FOR 'JURASSIC PARK REBIRTH'</h3>
+  <p>
+ The production of Jurassic Park: Rebirth was an ambitious project that aimed to blend the classic feel of the original films with a modern, grounded approach. Director Gareth Edwards led the production with a strong emphasis on authenticity, choosing to film on location in the dense jungles of Thailand and along the scenic Mediterranean coasts of Malta. These real environments provided natural and rugged backdrops that heightened the film’s immersive quality. Principal photography began in June 2024 and wrapped by late September, including studio work at Sky Studios Elstree in the UK. The filmmakers opted to shoot on 35mm film using Panavision cameras and anamorphic lenses, capturing a cinematic texture that echoed the original Jurassic Park while elevating the visual experience for a new generation.
+   </p>
+   <p>
+   The filming process was not without its risks and challenges. Edwards revealed that the Thailand locations included swamps and mangroves populated by dangerous wildlife such as snakes and spiders, which added real tension to the jungle sequences. The cast and crew remained unaware of some of the risks during filming to maintain focus and reduce fear. Despite the harsh conditions, the team maintained a strong commitment to practical effects, using animatronics and physical sets in combination with high-end CGI to bring the dinosaurs to life in a believable way. The post-production phase, which extended into early 2025, focused heavily on visual effects and sound design to ensure a thrilling and polished final product. Overall, the production team worked tirelessly to deliver a film that respected the legacy of the franchise while pushing it into bold new territory.
+    </p>
+</div>
+
+
+<style>
+  :root {
+    --desc-box-width: 110%;         
+    --desc-box-padding: 20px;      
+    --desc-box-font-size: 1.5rem;  
+    --desc-box-title-size: 1.8rem; 
+  }
+
+  .description-box {
+    background-color: #1a1a1a;
+    color: #fff;
+    width: var(--desc-box-width);
+    padding: var(--desc-box-padding);
+    border-radius: 12px;
+    margin: 30px auto 50px auto;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    font-family: 'Mukta', sans-serif;
+    font-size: var(--desc-box-font-size);
+    line-height: 1.5;
+    text-align: center;
+  }
+
+  .description-box h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: var(--desc-box-title-size);
+    color: #09f109;
+  }
+
+  .description-box {
+  background-color: #262424;
+  padding: 30px;
+  margin: 30px auto;
+  border-radius: 15px;
+  color: #ffffff;
+  max-width: 95%;
+  box-shadow: 0 0 15px rgba(0, 255, 0, 0.3);
+}
+
+.cast-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  margin-top: 20px;
+}
+
+.cast-card {
+  background-color: #353232;
+  padding: 15px;
+  border-radius: 12px;
+  color: white;
+  box-shadow: 0 4px 12px rgba(0, 255, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.cast-card:hover {
+  transform: translateY(-5px);
+}
+
+.cast-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+</style>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

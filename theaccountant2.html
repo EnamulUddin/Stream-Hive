@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Stream Hive</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Mukta&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Mukta', sans-serif;
+      background-color: #353232;
+    }
+
+    .navbar {
+      background-color: #353232;
+    }
+
+    .navbar-brand {
+      font-size: 1.8rem;
+      font-weight: bold;
+      color: rgb(9, 241, 9);
+    }
+
+    .nav-link {
+      font-size: 1.1rem;
+      color: #ffffff;
+      text-decoration: none;
+    }
+
+    .nav-link:hover {
+      color: #007bff;
+    }
+
+    .jumbotron {
+      background-image: url('../In-Class/css/homepage-hero-bg.jpeg');
+      background-position: center;
+      background-size: cover;
+      color: white;
+      text-align: center;
+      padding: 100px 0;
+      margin-bottom: 30px;
+      border-radius: 15px;
+    }
+
+    .jumbotron h1,
+    .jumbotron p {
+      color: rgb(9, 241, 9);
+    }
+
+    .category-card img {
+      width: 220px;
+      height: 420px;
+      object-fit: cover;
+      border-radius: 15px;
+      transition: none !important;
+      transform: none !important;
+    }
+
+    .category-card img:hover {
+      transform: none !important;
+      transition: none !important;
+    }
+
+    .category-card p {
+      font-weight: bold;
+      font-size: 1.2rem;
+      color: #ffffff;
+    }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      background-image: none;
+      width: 3rem;
+      height: 3rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      background-color: transparent;
+      color: rgb(9, 241, 9);
+      font-size: 2rem;
+      font-weight: bold;
+    }
+
+    .carousel-control-prev-icon::before,
+    .carousel-control-next-icon::before {
+      content: '';
+    }
+
+    .carousel-control-prev::after,
+    .carousel-control-next::after {
+      font-size: 3rem;
+      color: rgb(9, 241, 9);
+      font-weight: bold;
+    }
+
+    .carousel-control-prev::after {
+      content: '<';
+    }
+
+    .carousel-control-next::after {
+      content: '>';
+    }
+
+    .custom-row {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .custom-col {
+      flex: 0 0 45%;
+      max-width: 45%;
+    }
+
+    
+    .description-box {
+      background-color: #1a1a1a; 
+      color: #ffffff;            
+      padding: 20px;
+      border-radius: 12px;
+      max-width: 800px;
+      margin: 30px auto 50px auto; 
+      box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+      font-family: 'Mukta', sans-serif;
+      line-height: 1.5;
+      text-align: center;
+    }
+
+    .description-box h3 {
+      margin-top: 0;
+      margin-bottom: 10px;
+      font-weight: 700;
+      font-size: 1.8rem;
+      color: #09f109;  
+    }
+
+    .description-box p {
+      font-size: 1.1rem;
+    }
+
+  </style>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">STREAM HIVE</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="p-5 mb-4 jumbotron" style="background-color: #353232; border-radius: 20px; text-align: center;">
+      <h1 class="display-2" style="font-size: 7.5rem; color: #00ff00; font-weight: 1000; letter-spacing: 1px;">STREAM HIVE</h1>
+    </div>
+    <div class="text-center">
+      <p class="lead" style="font-size: 5.00rem; color: #ffffff; font-weight: 600;">THE ACCOUNTANT 2</p>
+    </div>
+  </div>
+
+  <div id="tabCarousel" class="carousel slide my-5" data-bs-ride="carousel" data-bs-interval="3000">
+    <div class="carousel-inner">
+
+      <div class="carousel-item active">
+        <div class="custom-row">
+          <div class="custom-col">
+            <div class="category-card text-center">
+              <img src="https://i.ytimg.com/vi/X_E9jYs0MeU/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&amp;rs=AOn4CLBtCji1hiWycfbarPlcSrcz0Ynxqg" style="width: 80.5%; height: auto;">
+            </div>
+          </div>
+          <div class="custom-col">
+            <div class="category-card text-center">
+              <img src="https://images.bauerhosting.com/empire/2025/04/The-Accountant-2-HERO.jpg?ar=16%3A9&amp;fit=crop&amp;crop=top&amp;auto=format&amp;w=1440&amp;q=80" style="width: 80%; height: auto;">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <div class="custom-row">
+          <div class="custom-col">
+            <div class="category-card text-center">
+              <img src="https://www.hollywoodreporter.com/wp-content/uploads/2025/02/the-accountant-2-320792-H-2025.jpg?w=1296&amp;h=730&amp;crop=1" style="width: 80%; height: auto;">
+            </div>
+          </div>
+          <div class="custom-col">
+            <div class="category-card text-center">
+              <img src="https://crops.giga.de/3d/4a/f9/7ece341c3b0c48d11117409376_YyAzODU0eDIxNjgrMTIzKzI4MwJyZSAxNjgwIDk0NAMzYTdlMWI0MTEwNw==.jpg" style="width: 80%; height: auto;">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <div class="custom-row">
+          <div class="custom-col">
+            <div class="category-card text-center">
+              <img src="https://i.imgur.com/1K1q7qH.png" style="width: 77.5%; height: auto;">
+            </div>
+          </div>
+          <div class="custom-col">
+            <div class="category-card text-center">
+              <img src="https://i.imgur.com/yWr4oro.png" style="width: 77.4%; height: auto;">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<div class="text-center">
+  <p class="lead" style="font-size: 5.00rem; color: #ffffff; font-weight: 600;">MOVIE PLOT</p>
+</div>
+
+<div class="description-box">
+  <h3>THE ACCOUNTANT 2</h3>
+  <p>
+   Christian Wolff has retreated to a quieter life, trying to stay out of the spotlight while managing a small forensic accounting firm under a new alias. However, his past resurfaces when a mysterious client contacts him with encrypted financial data tied to a global criminal organization. Reluctantly, Christian agrees to take the job after learning that the new case may be linked to an old enemy who has resurfaced and could pose a threat to someone he cares about.
+   </p>
+   <p>
+    As Christian begins to unravel the web of financial corruption, he discovers that the criminal network extends into powerful corporations and even government contracts. He partners with a former Treasury agent who now works privately, combining skills to track down key players in the operation. Along the way, Christian confronts brutal enforcers, deciphers hidden accounts, and faces emotional challenges as he reconnects with his estranged brother, who may have ties to the very criminals they are hunting.
+    </p>
+    <p>
+    The investigation leads to a high-stakes confrontation where Christian must infiltrate a fortified estate to expose the criminal leader and stop the organization from laundering billions through military tech. With precision and calm under pressure, he uses both his accounting brilliance and combat skills to dismantle the operation. In the final moments, Christian chooses to stay in the shadows once more, setting up a secure future for those he’s protected while leaving the door open for further action when justice calls again.
+  </p>
+</div>
+
+<div class="text-center">
+  <p class="lead" style="font-size: 6.00rem; color: #ffffff; font-weight: 600;">MOVIE CAST</p>
+</div>
+
+<div class="description-box">
+  <h3 style="color: #00ff00;">MAIN MOVIE CAST FOR 'THE ACCOUNTANT 2'</h3>
+  
+  <div class="cast-grid">
+    <div class="cast-card text-center">
+      <img src="https://i.imgur.com/LMWBOZX.png" alt="Ben Affleck as Christian Wolff" style="width: 83.4%; height: auto;">
+      <p><strong>BEN AFFLECK - CHRISTIAN WOLFF</strong></p>
+    </div>
+
+    <div class="cast-card text-center">
+      <img src="https://i.imgur.com/6PqCSvd.png" alt="Jon Bernthal as Braxton" style="width: 91.5%; height: auto;">
+      <p><strong>JON BETHRAL - BRAXTON</strong></p>
+    </div>
+
+    <div class="cast-card text-center">
+      <img src="https://www.acceleratemgmt.com/wp-content/uploads/2023/04/Cynthia-Addai-Robinson-THE-ACCOUNTANT.jpg" alt="Cynthia Addai-Robinson as Marybeth Medina" style="width: 94.2%; height: auto;" >
+      <p><strong>CYNTHIA ADDAI-ROBINSON - MARYBETH MEDINA</strong></p>
+    </div>
+
+    <div class="cast-card text-center">
+      <img src="https://www.hollywoodreporter.com/wp-content/uploads/2025/01/GettyImages-14014449571.jpg?w=1296" alt="Daniella Pineda as Anais" style="width: 94%; height: auto;">
+      <p><strong>DANIELLE PINEDA - ANAIS</strong></p>
+    </div>
+
+    <div class="cast-card text-center">
+      <img src="https://i.imgur.com/Y1djww4.png" alt="Allison Robertson as Justine" style="width: 91.4%; height: auto;">
+      <p><strong>ALLISON ROBERTSON - VOICE OF JUSTINE</strong></p>
+    </div>
+
+    <div class="cast-card text-center">
+      <img src="https://www.goldderby.com/wp-content/uploads/2016/05/AlisonWright.jpg" alt="Alison Wright as Justine" style="width: 94%; height: auto;">
+      <p><strong>ALISON WRIGHT - JUSTINE</strong></p>
+    </div>
+
+    <div class="cast-card text-center">
+      <img src="https://variety.com/wp-content/uploads/2015/02/jk-simmons.jpg?w=1000&amp;h=562&amp;crop=1" alt="J. K. Simmons as Raymond King" style="width: 94.4%; height: auto;">
+      <p><strong>J.K. SIMMONS - RAYMOND KING</strong></p>
+    </div>
+
+    <div class="cast-card text-center">
+      <img src="https://i.imgur.com/SOwAlL2.png" alt="Robert Morgan as Burke" style="width: 88%; height: auto;">
+      <p><strong>ROBERT MORGAN - BURKE</strong></p>
+    </div>
+
+    <div class="cast-card text-center">
+      <img src="https://i.imgur.com/7m9RwAE.png" alt="Andrew Howard as Batu" style="width: 90%; height: auto;">
+      <p><strong>ANDREW HOWARD - BATU</strong></p>
+    </div>
+  </div>
+</div>
+
+<div class="text-center">
+  <p class="lead" style="font-size: 5.00rem; color: #ffffff; font-weight: 600;">MOVIE PRODUCTION</p>
+</div>
+
+<div class="description-box">
+  <h3>THE PRODUCTION FOR 'SINNERS'</h3>
+  <p>
+    Production for The Accountant 2 was driven by strong fan interest and the original film’s lasting popularity on streaming platforms. Warner Bros. brought back director Gavin O’Connor and star Ben Affleck, aiming to build on the emotional depth and action-heavy storytelling of the first movie. The team spent months developing a script that would expand Christian Wolff’s world without losing the character’s unique focus and intensity. The writing process involved close consultation with experts to ensure continued respectful representation of neurodiversity, and early drafts emphasized a balance between cerebral intrigue and visceral action.
+   </p>
+   <p>
+    Filming took place in multiple locations across the United States, including urban centers and remote areas to highlight the duality of Christian’s internal and external struggles. The production leaned into practical effects and carefully choreographed action sequences, working with a top-tier stunt team to create realism without overreliance on CGI. Despite scheduling challenges and tight deadlines, the cast and crew maintained a focused and collaborative atmosphere. Ben Affleck reportedly remained deeply committed to the role, often engaging with the crew to shape scenes for maximum authenticity. The result was a film production praised internally for its discipline, ambition, and respect for the character-driven foundation that made the first movie stand out.
+    </p>
+</div>
+
+
+<style>
+  :root {
+    --desc-box-width: 110%;         
+    --desc-box-padding: 20px;      
+    --desc-box-font-size: 1.5rem;  
+    --desc-box-title-size: 1.8rem; 
+  }
+
+  .description-box {
+    background-color: #1a1a1a;
+    color: #fff;
+    width: var(--desc-box-width);
+    padding: var(--desc-box-padding);
+    border-radius: 12px;
+    margin: 30px auto 50px auto;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    font-family: 'Mukta', sans-serif;
+    font-size: var(--desc-box-font-size);
+    line-height: 1.5;
+    text-align: center;
+  }
+
+  .description-box h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: var(--desc-box-title-size);
+    color: #09f109;
+  }
+
+  .description-box {
+  background-color: #262424;
+  padding: 30px;
+  margin: 30px auto;
+  border-radius: 15px;
+  color: #ffffff;
+  max-width: 95%;
+  box-shadow: 0 0 15px rgba(0, 255, 0, 0.3);
+}
+
+.cast-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  margin-top: 20px;
+}
+
+.cast-card {
+  background-color: #353232;
+  padding: 15px;
+  border-radius: 12px;
+  color: white;
+  box-shadow: 0 4px 12px rgba(0, 255, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.cast-card:hover {
+  transform: translateY(-5px);
+}
+
+.cast-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+</style>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

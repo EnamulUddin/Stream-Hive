@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Stream Hive</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Mukta&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Mukta', sans-serif;
+      background-color: #353232;
+    }
+
+    .navbar {
+      background-color: #353232;
+    }
+
+    .navbar-brand {
+      font-size: 1.8rem;
+      font-weight: bold;
+      color: rgb(9, 241, 9);
+    }
+
+    .nav-link {
+      font-size: 1.1rem;
+      color: #ffffff;
+      text-decoration: none;
+    }
+
+    .nav-link:hover {
+      color: #007bff;
+    }
+
+    .jumbotron {
+      background-image: url('../In-Class/css/homepage-hero-bg.jpeg');
+      background-position: center;
+      background-size: cover;
+      color: white;
+      text-align: center;
+      padding: 100px 0;
+      margin-bottom: 30px;
+      border-radius: 15px;
+    }
+
+    .jumbotron h1,
+    .jumbotron p {
+      color: rgb(9, 241, 9);
+    }
+
+    .category-card img {
+      width: 220px;
+      height: 420px;
+      object-fit: cover;
+      border-radius: 15px;
+      transition: none !important;
+      transform: none !important;
+    }
+
+    .category-card img:hover {
+      transform: none !important;
+      transition: none !important;
+    }
+
+    .category-card p {
+      font-weight: bold;
+      font-size: 1.2rem;
+      color: #ffffff;
+    }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      background-image: none;
+      width: 3rem;
+      height: 3rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      background-color: transparent;
+      color: rgb(9, 241, 9);
+      font-size: 2rem;
+      font-weight: bold;
+    }
+
+    .carousel-control-prev-icon::before,
+    .carousel-control-next-icon::before {
+      content: '';
+    }
+
+    .carousel-control-prev::after,
+    .carousel-control-next::after {
+      font-size: 3rem;
+      color: rgb(9, 241, 9);
+      font-weight: bold;
+    }
+
+    .carousel-control-prev::after {
+      content: '<';
+    }
+
+    .carousel-control-next::after {
+      content: '>';
+    }
+
+    .custom-row {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .custom-col {
+      flex: 0 0 45%;
+      max-width: 45%;
+    }
+
+    
+    .description-box {
+      background-color: #1a1a1a; 
+      color: #ffffff;            
+      padding: 20px;
+      border-radius: 12px;
+      max-width: 800px;
+      margin: 30px auto 50px auto; 
+      box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+      font-family: 'Mukta', sans-serif;
+      line-height: 1.5;
+      text-align: center;
+    }
+
+    .description-box h3 {
+      margin-top: 0;
+      margin-bottom: 10px;
+      font-weight: 700;
+      font-size: 1.8rem;
+      color: #09f109;  
+    }
+
+    .description-box p {
+      font-size: 1.1rem;
+    }
+
+  </style>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">STREAM HIVE</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="p-5 mb-4 jumbotron" style="background-color: #353232; border-radius: 20px; text-align: center;">
+      <h1 class="display-2" style="font-size: 7.5rem; color: #00ff00; font-weight: 1000; letter-spacing: 1px;">STREAM HIVE</h1>
+    </div>
+    <div class="text-center">
+      <p class="lead" style="font-size: 5.00rem; color: #ffffff; font-weight: 600;">LILO & STITCH</p>
+    </div>
+  </div>
+
+  <div id="tabCarousel" class="carousel slide my-5" data-bs-ride="carousel" data-bs-interval="3000">
+    <div class="carousel-inner">
+
+      <div class="carousel-item active">
+        <div class="custom-row">
+          <div class="custom-col">
+            <div class="category-card text-center">
+              <img src="https://i.ytimg.com/vi/Y5d8ThxKu4U/maxresdefault.jpg" style="width: 81%; height: auto;">
+            </div>
+          </div>
+          <div class="custom-col">
+            <div class="category-card text-center">
+              <img src="https://i.ytimg.com/vi/-jZ0NK7iQ3E/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&amp;rs=AOn4CLBmckaypLz4pSHyza-xSSD5m8g59g"  style="width: 81.8%; height: auto;">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <div class="custom-row">
+          <div class="custom-col">
+            <div class="category-card text-center">
+              <img src="https://i.imgur.com/9blA2At.png" style="width: 78.4%; height: auto;">
+            </div>
+          </div>
+          <div class="custom-col">
+            <div class="category-card text-center">
+              <img src="https://i.imgur.com/LBWkKTc.png" style="width: 80.5%; height: auto;">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <div class="custom-row">
+          <div class="custom-col">
+            <div class="category-card text-center">
+              <img src="https://i.imgur.com/x0JYW2t.png" style="width: 73%; height: auto;">
+            </div>
+          </div>
+          <div class="custom-col">
+            <div class="category-card text-center">
+              <img src="https://i.ytimg.com/vi/0T6rPNyThm4/maxresdefault.jpg" style="width: 80%; height: auto;">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<div class="text-center">
+  <p class="lead" style="font-size: 5.00rem; color: #ffffff; font-weight: 600;">MOVIE PLOT</p>
+</div>
+
+<div class="description-box">
+  <h3>LILO & STITCH</h3>
+  <p>
+    The story begins on the peaceful island of Kauai where a young girl named Lilo feels isolated and misunderstood after the loss of her parents. She lives with her older sister Nani who tries her best to care for her while balancing work and responsibilities. Lilo is imaginative and fiercely independent, often clashing with other children her age. In a distant part of the galaxy, a genetic experiment escapes from an alien facility and crash-lands on Earth. This creature, later named Stitch, ends up in an animal shelter where Lilo adopts him, believing he is a strange dog. Their initial time together is chaotic but Lilo is determined to make him part of her small family.
+   </p>
+   <p>
+    As Lilo and Stitch try to bond, his unpredictable behavior causes trouble for Nani and draws the attention of social services. Meanwhile, alien agents are dispatched to retrieve Stitch, creating wild encounters and close calls. Through Lilo’s persistence and kindness, Stitch begins to understand what it means to care for others and to have a family. His destructive instincts slowly give way to a desire for connection and belonging. Nani fights to keep her family together despite the chaos, and the bond between the three grows stronger with each challenge they face.
+    </p>
+    <p>
+   Eventually, Stitch must choose between returning to space or staying with the people who have shown him love and acceptance. He decides to protect Lilo and her sister, risking his own safety to save them. This act of courage changes the minds of the alien authorities, who allow him to remain on Earth. In the end, Lilo, Nani, and Stitch form an unbreakable family unit, learning that family is not defined by blood but by loyalty and love. Their story concludes with hope and harmony as they embrace a new life together filled with support, laughter, and adventure.
+  </p>
+</div>
+
+<div class="text-center">
+  <p class="lead" style="font-size: 6.00rem; color: #ffffff; font-weight: 600;">MOVIE CAST</p>
+</div>
+
+<div class="description-box">
+  <h3 style="color: #00ff00;">MAIN MOVIE CAST FOR 'LILO & STITCH'</h3>
+  
+  <div class="cast-grid">
+    <div class="cast-card text-center">
+      <img src="https://i.imgur.com/TgSHc01.png" alt="Maia Kealoha as Lilo Pelekai" style="width: 88%; height: auto;">
+      <p><strong>MAIA KEALOHA - LILO PELEKAI</strong></p>
+    </div>
+
+    <div class="cast-card text-center">
+      <img src="https://i.imgur.com/7mKGLBN.png" alt="Chris Sanders as the voice of Stitch" style="width: 90%; height: auto;">
+      <p><strong>CHRIS SANDERS - VOICE OF STITCH</strong></p>
+    </div>
+
+    <div class="cast-card text-center">
+      <img src="https://i.imgur.com/9h4D6Mt.png" alt="Sydney Elizebeth Agudong as Nani Pelekai" style="width: 89.3%; height: auto;" >
+      <p><strong>SYDNEY ELIZABETH AGUDONG - NANI PELEKAI</strong></p>
+    </div>
+
+    <div class="cast-card text-center">
+      <img src="https://i.imgur.com/gQGHCff.png" alt="Zach Galifianakis as the voice of Dr. Jumba Jookiba" style="width: 90.2%; height: auto;">
+      <p><strong>ZACH GALIFIANAKIS - VOICE OF DR JUMBA JOOKIBA</strong></p>
+    </div>
+
+    <div class="cast-card text-center">
+      <img src="https://i.imgur.com/gS3IUef.png" alt="Billy Magnussen as the voice of Agent Wendell Pleakley" style="width: 88%; height: auto;">
+      <p><strong>BILLY MAGNUSSEN - VOICE OF AGENT WENDELL PLEAKLEY</strong></p>
+    </div>
+
+    <div class="cast-card text-center">
+      <img src="https://i.imgur.com/tUTn28N.png" alt="Courtney B. Vance as Cobra Bubbles" style="width: 92%; height: auto;">
+      <p><strong>COURTNEY B. VANCE - COBRA BUBBLES</strong></p>
+    </div>
+
+    <div class="cast-card text-center">
+      <img src="https://www.thelist.com/img/gallery/hannah-waddingham-the-complete-evolution-of-the-ted-lasso-star/l-intro-1687744125.jpg" alt="Hannah Waddingham as the voice of the Grand Councilwoman" style= "width: 95%; height: auto;">
+      <p><strong>HANNAH WADDINGHAM - VOICE OF COUNCILWOMAN </strong></p>
+    </div>
+
+    <div class="cast-card text-center">
+      <img src="https://i.imgur.com/epFPLEw.png" alt="Kaipo Dudoit as David Kawena" style="width: 94%; height: auto;">
+      <p><strong>KAIPO DUDOIT - DAVID KAWENA</strong></p>
+    </div>
+
+    <div class="cast-card text-center">
+      <img src="https://i.imgur.com/77aJn15.png" alt="Tia Carrere as Mrs. Kekoa" style="width: 88%; height: auto;">
+      <p><strong>TIA CARRERE - MRS. KEKOA</strong></p>
+    </div>
+
+    <div class="cast-card text-center">
+      <img src="https://cdn.mos.cms.futurecdn.net/gJRdyJWUmn6QnVFN5LLm6m.png" alt="Amy Hill as Tūtū" style="width: 95%; height: auto;">
+      <p><strong>AMY HILL - TUTU</strong></p>
+    </div>
+
+    <div class="cast-card text-center">
+      <img src="https://i.imgur.com/ee5Clki.png" alt="Emery Hookano-Briel as Mertle Edmonds" style="width: 86%; height: auto;">
+      <p><strong>EMERY HOOKANO-BRIEL - MERTLE EDMONDS</strong></p>
+    </div>
+
+    <div class="cast-card text-center">
+      <img src="https://i.imgur.com/3Jgi7Z1.png" alt="Jason Scott Lee as the manager for the Lū'au" style="width: 89%; height: auto;">
+      <p><strong>JASON SCOTT LEE - LU'AU</strong></p>
+    </div>
+  </div>
+</div>
+
+<div class="text-center">
+  <p class="lead" style="font-size: 5.00rem; color: #ffffff; font-weight: 600;">MOVIE PRODUCTION</p>
+</div>
+
+<div class="description-box">
+  <h3>THE PRODUCTION FOR 'LILO & STITCH'</h3>
+  <p>
+    The production of the live-action Lilo and Stitch movie was both a heartfelt and challenging process that aimed to preserve the emotional core of the original animated classic. Filming primarily took place in Hawaii which provided the authentic atmosphere and natural beauty essential to capturing the spirit of the story. The team prioritized working with local communities to maintain cultural respect and accuracy especially in representing Hawaiian customs and language. Casting was carefully handled to reflect the diversity and depth of the characters with a strong focus on finding young talent who could embody the innocence and strength of Lilo. The filmmakers also collaborated with cultural consultants to ensure the depiction of Hawaiian life remained thoughtful and genuine throughout the film.
+   </p>
+   <p>
+    Bringing Stitch to life presented a significant technical hurdle that required a blend of practical effects and advanced CGI. The visual effects team worked tirelessly to make the alien creature expressive and believable without losing the charm that made him iconic. Behind the scenes the cast and crew developed a strong sense of camaraderie that mirrored the theme of found family portrayed in the story. The production was committed to maintaining the emotional tone of the original while updating its visuals and storytelling for a new generation. Despite logistical challenges such as unpredictable weather and the complexities of blending live-action with animation the team’s dedication paid off in a film that celebrates love resilience and the meaning of ohana.
+    </p>
+</div>
+
+
+<style>
+  :root {
+    --desc-box-width: 110%;         
+    --desc-box-padding: 20px;      
+    --desc-box-font-size: 1.5rem;  
+    --desc-box-title-size: 1.8rem; 
+  }
+
+  .description-box {
+    background-color: #1a1a1a;
+    color: #fff;
+    width: var(--desc-box-width);
+    padding: var(--desc-box-padding);
+    border-radius: 12px;
+    margin: 30px auto 50px auto;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    font-family: 'Mukta', sans-serif;
+    font-size: var(--desc-box-font-size);
+    line-height: 1.5;
+    text-align: center;
+  }
+
+  .description-box h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: var(--desc-box-title-size);
+    color: #09f109;
+  }
+
+  .description-box {
+  background-color: #262424;
+  padding: 30px;
+  margin: 30px auto;
+  border-radius: 15px;
+  color: #ffffff;
+  max-width: 95%;
+  box-shadow: 0 0 15px rgba(0, 255, 0, 0.3);
+}
+
+.cast-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  margin-top: 20px;
+}
+
+.cast-card {
+  background-color: #353232;
+  padding: 15px;
+  border-radius: 12px;
+  color: white;
+  box-shadow: 0 4px 12px rgba(0, 255, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.cast-card:hover {
+  transform: translateY(-5px);
+}
+
+.cast-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+</style>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

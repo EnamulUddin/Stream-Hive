@@ -1,0 +1,408 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Stream Hive</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Mukta&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Mukta', sans-serif;
+      background-color: #353232;
+    }
+
+    .navbar {
+      background-color: #353232;
+    }
+
+    .navbar-brand {
+      font-size: 1.8rem;
+      font-weight: bold;
+      color: rgb(9, 241, 9);
+    }
+
+    .nav-link {
+      font-size: 1.1rem;
+      color: #ffffff;
+      text-decoration: none;
+    }
+
+    .nav-link:hover {
+      color: #007bff;
+    }
+
+    .jumbotron {
+      background-image: url('../In-Class/css/homepage-hero-bg.jpeg');
+      background-position: center;
+      background-size: cover;
+      color: white;
+      text-align: center;
+      padding: 100px 0;
+      margin-bottom: 30px;
+      border-radius: 15px;
+    }
+
+    .jumbotron h1,
+    .jumbotron p {
+      color: rgb(9, 241, 9);
+    }
+
+    .category-card img {
+      width: 220px;
+      height: 420px;
+      object-fit: cover;
+      border-radius: 15px;
+      transition: none !important;
+      transform: none !important;
+    }
+
+    .category-card img:hover {
+      transform: none !important;
+      transition: none !important;
+    }
+
+    .category-card p {
+      font-weight: bold;
+      font-size: 1.2rem;
+      color: #ffffff;
+    }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      background-image: none;
+      width: 3rem;
+      height: 3rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      background-color: transparent;
+      color: rgb(9, 241, 9);
+      font-size: 2rem;
+      font-weight: bold;
+    }
+
+    .carousel-control-prev-icon::before,
+    .carousel-control-next-icon::before {
+      content: '';
+    }
+
+    .carousel-control-prev::after,
+    .carousel-control-next::after {
+      font-size: 3rem;
+      color: rgb(9, 241, 9);
+      font-weight: bold;
+    }
+
+    .carousel-control-prev::after {
+      content: '<';
+    }
+
+    .carousel-control-next::after {
+      content: '>';
+    }
+
+    .custom-row {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .custom-col {
+      flex: 0 0 45%;
+      max-width: 45%;
+    }
+
+    
+    .description-box {
+      background-color: #1a1a1a; 
+      color: #ffffff;            
+      padding: 20px;
+      border-radius: 12px;
+      max-width: 800px;
+      margin: 30px auto 50px auto; 
+      box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+      font-family: 'Mukta', sans-serif;
+      line-height: 1.5;
+      text-align: center;
+    }
+
+    .description-box h3 {
+      margin-top: 0;
+      margin-bottom: 10px;
+      font-weight: 700;
+      font-size: 1.8rem;
+      color: #09f109;  
+    }
+
+    .description-box p {
+      font-size: 1.1rem;
+    }
+
+  </style>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">STREAM HIVE</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="p-5 mb-4 jumbotron" style="background-color: #353232; border-radius: 20px; text-align: center;">
+      <h1 class="display-2" style="font-size: 7.5rem; color: #00ff00; font-weight: 1000; letter-spacing: 1px;">STREAM HIVE</h1>
+    </div>
+    <div class="text-center">
+      <p class="lead" style="font-size: 5.00rem; color: #ffffff; font-weight: 600;">FINAL DESTINATION: BLOODLINE</p>
+    </div>
+  </div>
+
+  <div id="tabCarousel" class="carousel slide my-5" data-bs-ride="carousel" data-bs-interval="3000">
+    <div class="carousel-inner">
+
+      <div class="carousel-item active">
+        <div class="custom-row">
+          <div class="custom-col">
+            <div class="category-card text-center">
+              <img src="https://images.bauerhosting.com/empire/2025/05/final-destination-bloodlines-main.jpg?ar=16:9&amp;fit=crop&amp;crop=top" style="width: 80.4%; height: auto;">
+            </div>
+          </div>
+          <div class="custom-col">
+            <div class="category-card text-center">
+              <img src="https://sm.ign.com/t/ign_in/feature/f/final-dest/final-destination-bloodlines-ending-explained-does-it-set-up_6shr.1200.jpg" style="width: 80%; height: auto;">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <div class="custom-row">
+          <div class="custom-col">
+            <div class="category-card text-center">
+              <img src="https://hips.hearstapps.com/hmg-prod/images/final-destination-bloodlines-still-6821c69c14e9c.jpg?crop=0.7447916666666666xw:1xh;0.0814xw,0&amp;resize=1200:*" style="width: 79.8%; height: auto;">
+            </div>
+          </div>
+          <div class="custom-col">
+            <div class="category-card text-center">
+              <img src="https://www.hollywoodreporter.com/wp-content/uploads/2025/05/rev-1-FDB-FP-015_High_Res_JPEG-H-2025.jpg?w=1296" style="width: 80%; height: auto;">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <div class="custom-row">
+          <div class="custom-col">
+            <div class="category-card text-center">
+              <img src="https://www.cgomovies.co.uk/wp-content/uploads/2025/05/final-destination-bloodlines-2025-kaitlyn-santa-juana-teo-briones-001.webp" style="width: 80%; height: auto;">
+            </div>
+          </div>
+          <div class="custom-col">
+            <div class="category-card text-center">
+              <img src="https://s.yimg.com/ny/api/res/1.2/GIaQEc9KDjaFKWriWtr2TA--/YXBwaWQ9aGlnaGxhbmRlcjt3PTEyNDI7aD02OTk-/https://media.zenfs.com/en/comingsoon_net_477/ae1f507193bc48d21913098780c1bff5" style="width: 80%; height: auto;">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<div class="text-center">
+  <p class="lead" style="font-size: 5.00rem; color: #ffffff; font-weight: 600;">MOVIE PLOT</p>
+</div>
+
+<div class="description-box">
+  <h3>FINAL DESTINATION: BLOODLINE</h3>
+  <p>
+   In Final Destination: Bloodline, the story opens in a quiet, modern-day town where a group of strangers attend a high-profile genealogy convention designed to trace ancestry using advanced DNA technology. Among them is Erin Clarke, a college biology student who reluctantly agrees to join her friends at the event. During a guided tour through a newly opened ancestral archive, Erin experiences a vivid, horrifying vision: a massive fire caused by an electrical explosion consumes the building, killing everyone inside in brutal detail. Snapping back to reality, she panics and convinces several people to leave the facility moments before the very disaster unfolds. They escape, but Death’s design has now been interrupted, and the survivors unknowingly find themselves marked.
+   </p>
+   <p>
+   As the days pass, those who escaped begin to die in shocking, increasingly gruesome ways that appear accidental but Erin recognizes the pattern. Digging deeper, she discovers that everyone who survived the incident is distantly related to someone who was supposed to die in a historical tragedy generations ago an unsolved massacre from centuries back that their ancestors mysteriously avoided. It turns out Death has been denied for generations, and the chain reaction is only now catching up through their bloodline. Erin teams up with Miles, a skeptical forensic intern and fellow survivor, and together they use ancestral records to trace the original point where the bloodline first defied fate. They begin to piece together the new "order of death" based not on who was saved, but on who descended from the original survivor.
+    </p>
+    <p>
+    As the body count rises, Erin and Miles try to alter the sequence by confronting Death’s past, even traveling to the ruins of the original massacre site to perform a symbolic "closure" ritual meant to reset the bloodline. Just as it seems they've succeeded, a twist reveals that Miles was never on Death’s list at all he inserted himself into Erin’s life for personal reasons. Erin realizes too late that she alone was the bloodline’s true link, and Miles’s presence disrupted her chances of survival. In the final moments, a seemingly random, minor accident leads to Erin’s death in a poetic, full circle callback to the original vision. The film ends on a chilling note: a new family line, unaware of their inherited curse, is introduced suggesting the bloodline curse is far from over. 
+  </p>
+</div>
+
+<div class="text-center">
+  <p class="lead" style="font-size: 5.00rem; color: #ffffff; font-weight: 600;">MOVIE CAST</p>
+</div>
+
+<div class="description-box">
+  <h3 style="color: #00ff00;">MAIN MOVIE CAST FOR 'FINAL DESTINATION: BLOODLINE'</h3>
+  
+  <div class="cast-grid">
+    <div class="cast-card text-center">
+      <img src="https://i.imgur.com/Com30MU.png" alt="Kaitlyn Santa Juana as Stefani Reyes" style="width: 90%; height: auto;">
+      <p><strong>KAITLYN SANTA JUANA - STEFANI REYES</strong></p>
+    </div>
+
+    <div class="cast-card text-center">
+      <img src="https://i.imgur.com/HyE2o0r.png" alt="Teo Briones as Charlie Reyes" style="width: 92.3%; height: auto;">
+      <p><strong>TEO BRIONES - CHARLIE REYES</strong></p>
+    </div>
+
+    <div class="cast-card text-center">
+      <img src="https://i.imgur.com/ew0BtuP.png" alt="Richard Harmon as Erik Campbell" style="width: 85%; height: auto;" >
+      <p><strong>RICHARD HARMON - ERIK CAMPBELL</strong></p>
+    </div>
+
+    <div class="cast-card text-center">
+      <img src="https://i.imgur.com/0Ob8V5w.png" alt="Owen Patrick Joyner as Bobby Campbell" style="width: 90%; height: auto;">
+      <p><strong>OWEN PATRICK JOYNER - BOBBY CAMPBELL</strong></p>
+    </div>
+
+    <div class="cast-card text-center">
+      <img src="https://i.redd.it/kn9reg6umep81.jpg" alt="Rya Kihlstedt as Darlene Campbell" style="width: 95%; height: auto;">
+      <p><strong>RYA KIHLSTEDT - DARLENE CAMPBELL</strong></p>
+    </div>
+
+    <div class="cast-card text-center">
+      <img src="https://i0.wp.com/bloody-disgusting.com/wp-content/uploads/2025/04/annalore-theythem.jpg?fit=1280%2C720&amp;ssl=1" alt="Anna Lore as Julia Campbell" style="width: 95%; height: auto;">
+      <p><strong>ANNA LORE - JULIA CAMPBELL</strong></p>
+    </div>
+
+    <div class="cast-card text-center">
+      <img src="https://i.imgur.com/XEmmaie.png" alt="Gabrielle Rose as Iris Campbell" style="width: 90%; height: auto;">
+      <p><strong>GABRIELLE ROSE - IRIS CAMPBELL</strong></p>
+    </div>
+
+    <div class="cast-card text-center">
+      <img src="https://i.imgur.com/bu2tI6m.png" alt="Brec Bassinger as Young Iris" style="width: 94.5%; height: auto;">
+      <p><strong>BREC BASSINGER - YOUNG IRIS CAMPBELL</strong></p>
+    </div>
+
+    <div class="cast-card text-center">
+      <img src="https://boundingintocomics.com/cdn-cgi/image/width=788,height=444,fit=crop,quality=80,format=auto,onerror=redirect,metadata=none/wp-content/uploads/Pass-you-by.jpg" alt="Tony Todd as William Bludworth" style="width: 95%; height: auto;">
+      <p><strong>TONY TODD - WILLIAM BLUDWORTH</strong></p>
+    </div>
+
+    <div class="cast-card text-center">
+      <img src="https://i.imgur.com/zLmmPEA.png" alt="Jayden Oniah as a young William Bludworth" style="width: 94.5%; height: auto;">
+      <p><strong>JAYDEN ONIAH - YOUNG WILLIAM BLUDWORTH</strong></p>
+    </div>
+
+    <div class="cast-card text-center">
+      <img src="https://m.media-amazon.com/images/M/MV5BZDk0YTA1ZmMtZWNhNi00MjkxLWE0NTMtNDNkYTFlZWFkNzFhXkEyXkFqcGc@._V1_.jpg" alt="Tinpo Lee as Marty Reyes" style="width: 95%; height: auto;">
+      <p><strong>TINPO LEE - MARTY REYES</strong></p>
+    </div>
+
+    <div class="cast-card text-center">
+      <img src="https://images.thedirect.com/media/photos/11brenda.png" alt="April Telek as Brenda Campbell" style="width: 95%; height: auto;">
+      <p><strong>APRIL TELEK - BRENDA CAMPBELL</strong></p>
+    </div>
+
+    <div class="cast-card text-center">
+      <img src="https://www.bizbooks.net/wp-content/uploads/2016/04/biz-books-alex-zahara.jpg" alt="Alex Zahara as Howard Campbell" style="width: 95%; height: auto;">
+      <p><strong>ALEX ZAHARA - HOWARD CAMPBELL</strong></p>
+    </div>
+
+    <div class="cast-card text-center">
+      <img src="https://i.imgur.com/Wa4Xc59.png" alt="Max Lloyd-Jones as Paul Campbell" style="width: 93%; height: auto;">
+      <p><strong>MAX LLOYD-JONES - PAUL CAMPBELL</strong></p>
+    </div>
+
+    <div class="cast-card text-center">
+      <img src="https://i.imgur.com/k7iZKD5.png" alt="Brenna Llewellyn as Val" style="width: 91.5%; height: auto;">
+      <p><strong>BRENNA LLEWELLYN - VAL</strong></p>
+    </div>
+  </div>
+</div>
+
+<div class="text-center">
+  <p class="lead" style="font-size: 6.00rem; color: #ffffff; font-weight: 600;">MOVIE PRODUCTION</p>
+</div>
+
+<div class="description-box">
+  <h3>THE PRODUCTION FOR 'FINAL DESTINATION: BLOODLINE'</h3>
+  <p>
+    The production of Final Destination: Bloodline was marked by a return to the franchise’s signature blend of suspense, practical effects, and inventive death sequences, all while introducing a fresh generational twist. Filming took place across several hauntingly atmospheric locations including a restored historical village and a modern genetics laboratory set meticulously built from scratch. The creative team placed a heavy emphasis on realism, using minimal CGI and relying instead on stunt coordination, practical explosions, and prosthetic makeup to deliver the visceral horror fans expect. Director Marcus Greene, a newcomer to the horror franchise scene, collaborated closely with veteran producers from the original films to ensure the tone stayed faithful while pushing the mythology in a new direction. Casting was a mix of seasoned actors and rising stars, creating a balanced ensemble with strong chemistry and emotional weight.
+   </p>
+   <p>
+   Behind the scenes, the production faced several challenges, especially in choreographing the elaborate and often dangerous death sequences. Safety measures were strict and detailed planning went into every effect shot to ensure no one was at risk during filming. The script underwent several revisions to weave in themes of ancestry and destiny without losing the core thrill of the franchise. The writers worked closely with genealogists and historical consultants to craft a plausible backstory that could tie into the existing Final Destination lore in a believable way. In post-production, editors focused on maintaining the film’s pacing and suspense while the sound design team layered subtle atmospheric effects to elevate tension in key scenes. The end result was a bold and chilling entry that breathed new life into the franchise while respecting its roots.
+    </p>
+</div>
+
+
+<style>
+  :root {
+    --desc-box-width: 110%;         
+    --desc-box-padding: 20px;      
+    --desc-box-font-size: 1.5rem;  
+    --desc-box-title-size: 1.8rem; 
+  }
+
+  .description-box {
+    background-color: #1a1a1a;
+    color: #fff;
+    width: var(--desc-box-width);
+    padding: var(--desc-box-padding);
+    border-radius: 12px;
+    margin: 30px auto 50px auto;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    font-family: 'Mukta', sans-serif;
+    font-size: var(--desc-box-font-size);
+    line-height: 1.5;
+    text-align: center;
+  }
+
+  .description-box h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: var(--desc-box-title-size);
+    color: #09f109;
+  }
+
+  .description-box {
+  background-color: #262424;
+  padding: 30px;
+  margin: 30px auto;
+  border-radius: 15px;
+  color: #ffffff;
+  max-width: 95%;
+  box-shadow: 0 0 15px rgba(0, 255, 0, 0.3);
+}
+
+.cast-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  margin-top: 20px;
+}
+
+.cast-card {
+  background-color: #353232;
+  padding: 15px;
+  border-radius: 12px;
+  color: white;
+  box-shadow: 0 4px 12px rgba(0, 255, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.cast-card:hover {
+  transform: translateY(-5px);
+}
+
+.cast-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+</style>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

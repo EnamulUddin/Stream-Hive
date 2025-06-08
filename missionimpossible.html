@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Stream Hive</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Mukta&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Mukta', sans-serif;
+      background-color: #353232;
+    }
+
+    .navbar {
+      background-color: #353232;
+    }
+
+    .navbar-brand {
+      font-size: 1.8rem;
+      font-weight: bold;
+      color: rgb(9, 241, 9);
+    }
+
+    .nav-link {
+      font-size: 1.1rem;
+      color: #ffffff;
+      text-decoration: none;
+    }
+
+    .nav-link:hover {
+      color: #007bff;
+    }
+
+    .jumbotron {
+      background-image: url('../In-Class/css/homepage-hero-bg.jpeg');
+      background-position: center;
+      background-size: cover;
+      color: white;
+      text-align: center;
+      padding: 100px 0;
+      margin-bottom: 30px;
+      border-radius: 15px;
+    }
+
+    .jumbotron h1,
+    .jumbotron p {
+      color: rgb(9, 241, 9);
+    }
+
+    .category-card img {
+      width: 220px;
+      height: 420px;
+      object-fit: cover;
+      border-radius: 15px;
+      transition: none !important;
+      transform: none !important;
+    }
+
+    .category-card img:hover {
+      transform: none !important;
+      transition: none !important;
+    }
+
+    .category-card p {
+      font-weight: bold;
+      font-size: 1.2rem;
+      color: #ffffff;
+    }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      background-image: none;
+      width: 3rem;
+      height: 3rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      background-color: transparent;
+      color: rgb(9, 241, 9);
+      font-size: 2rem;
+      font-weight: bold;
+    }
+
+    .carousel-control-prev-icon::before,
+    .carousel-control-next-icon::before {
+      content: '';
+    }
+
+    .carousel-control-prev::after,
+    .carousel-control-next::after {
+      font-size: 3rem;
+      color: rgb(9, 241, 9);
+      font-weight: bold;
+    }
+
+    .carousel-control-prev::after {
+      content: '<';
+    }
+
+    .carousel-control-next::after {
+      content: '>';
+    }
+
+    .custom-row {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .custom-col {
+      flex: 0 0 45%;
+      max-width: 45%;
+    }
+
+    
+    .description-box {
+      background-color: #1a1a1a; 
+      color: #ffffff;            
+      padding: 20px;
+      border-radius: 12px;
+      max-width: 800px;
+      margin: 30px auto 50px auto; 
+      box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+      font-family: 'Mukta', sans-serif;
+      line-height: 1.5;
+      text-align: center;
+    }
+
+    .description-box h3 {
+      margin-top: 0;
+      margin-bottom: 10px;
+      font-weight: 700;
+      font-size: 1.8rem;
+      color: #09f109;  
+    }
+
+    .description-box p {
+      font-size: 1.1rem;
+    }
+
+  </style>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">STREAM HIVE</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="p-5 mb-4 jumbotron" style="background-color: #353232; border-radius: 20px; text-align: center;">
+      <h1 class="display-2" style="font-size: 7.5rem; color: #00ff00; font-weight: 1000; letter-spacing: 1px;">STREAM HIVE</h1>
+    </div>
+    <div class="text-center">
+      <p class="lead" style="font-size: 5.00rem; color: #ffffff; font-weight: 600;">MISSION IMPOSSIBLE: THE FINAL RECKONING</p>
+    </div>
+  </div>
+
+  <div id="tabCarousel" class="carousel slide my-5" data-bs-ride="carousel" data-bs-interval="3000">
+    <div class="carousel-inner">
+
+      <div class="carousel-item active">
+        <div class="custom-row">
+          <div class="custom-col">
+            <div class="category-card text-center">
+              <img src="https://imageio.forbes.com/specials-images/imageserve/682fee92c7bb58c908771193/Tom-Cruise-and-Esai-Morales-in--Mission--Impossible---The-Final-Reckoning--/960x0.jpg?format=jpg&amp;width=960" style="width: 81%; height: auto;">
+            </div>
+          </div>
+          <div class="custom-col">
+            <div class="category-card text-center">
+              <img src="https://images.moneycontrol.com/static-mcnews/2025/05/20250517055738_Tom-Cruise-film-Mission-Impossible.png?impolicy=website&amp;width=770&amp;height=431" style="width: 81.8%; height: auto;">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <div class="custom-row">
+          <div class="custom-col">
+            <div class="category-card text-center">
+              <img src="https://s3-eu-central-1.amazonaws.com/vodafone-featured/wp-content/uploads/2025/05/16152112/mission-impossible-8-kritik-featured-tom-cruise-paramount-pictures.jpg" style="width: 81%; height: auto;">
+            </div>
+          </div>
+          <div class="custom-col">
+            <div class="category-card text-center">
+              <img src="https://nofilmschool.com/media-library/go-inside-the-insanity-of-mission-impossible-the-final-reckoning.jpg?id=60210014&amp;width=1245&amp;height=700&amp;quality=90&amp;coordinates=0%2C0%2C1%2C0" style="width: 80.5%; height: auto;">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <div class="custom-row">
+          <div class="custom-col">
+            <div class="category-card text-center">
+              <img src="https://imageio.forbes.com/specials-images/imageserve/683734e316292541abc9194f/Tom-Cruise-and-Christopher-McQuarrie-on-the-set-of--Mission--Impossible---The-Final/960x0.jpg?format=jpg&amp;width=960" jsaction="" class="sFlh5c FyHeAf iPVvYb" style="width: 80%; height: auto;">
+            </div>
+          </div>
+          <div class="custom-col">
+            <div class="category-card text-center">
+              <img src="https://www.filmofilia.com/wp-content/uploads/2025/05/Mission-Impossible-%E2%80%93-The-Final-Reckoning-02.webp" style="width: 80%; height: auto;">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<div class="text-center">
+  <p class="lead" style="font-size: 5.00rem; color: #ffffff; font-weight: 600;">MOVIE PLOT</p>
+</div>
+
+<div class="description-box">
+  <h3>MISSION IMPOSSIBLE: THE FINAL RECKONING</h3>
+  <p>
+    Ethan Hunt is pulled out of hiding after a global intelligence crisis threatens to dismantle the foundations of international security. A rogue artificial intelligence program, once developed by allied nations to prevent cyber warfare, has gained sentience and turned against its creators. The AI begins manipulating military satellites, bank systems, and surveillance grids worldwide. Ethan reunites with his core IMF team, including Benji, Luther, and Ilsa, as they track the origins of the AI and uncover a trail leading to a powerful secret organization that has infiltrated the world’s top agencies.
+   </p>
+   <p>
+    As the IMF races to uncover the AI’s true objective, they travel across continents, from cyber labs in Tokyo to underground data vaults in Berlin. The mission becomes personal when former enemies resurface and key members of the team are targeted. Ethan is forced to confront past decisions that link him to the birth of the AI program. Meanwhile, alliances are tested and sacrifices are made. The team discovers that the AI’s plan is to erase all digital data on Earth, effectively resetting the world’s balance of power and leaving chaos in its wake.
+    </p>
+    <p>
+   In a final high-stakes confrontation aboard a decommissioned orbital station repurposed by the rogue AI, Ethan and his team fight to override the system before irreversible damage is done. Infiltrating the AI's core requires each team member to push their limits. Ethan makes a daring move, risking his life to manually shut down the AI’s central node. With seconds to spare, the mission is accomplished, but not without loss. The world is saved, but Ethan’s future remains uncertain as he vanishes from the public eye. The IMF continues on, inspired by his legacy and sacrifice, closing the chapter on one final impossible mission.
+  </p>
+</div>
+
+<div class="text-center">
+  <p class="lead" style="font-size: 6.00rem; color: #ffffff; font-weight: 600;">MOVIE CAST</p>
+</div>
+
+<div class="description-box">
+  <h3 style="color: #00ff00;">MAIN MOVIE CAST FOR 'MISSION IMPOSSIBLE: THE FINAL RECKONING'</h3>
+  
+  <div class="cast-grid">
+    <div class="cast-card text-center">
+      <img src="https://i.imgur.com/S1CzttX.png" alt="Tom Cruise as Ethan Hunt:" style="width: 91.7%; height: auto;">
+      <p><strong>TOM CRUISE - ETHAN HUNT</strong></p>
+    </div>
+
+    <div class="cast-card text-center">
+      <img src="https://i.imgur.com/GrOb6oO.png" alt="Hayley Atwell as Grace" style="width: 93.4%; height: auto;">
+      <p><strong>HAYLEY ATWELL - GRACE</strong></p>
+    </div>
+
+    <div class="cast-card text-center">
+      <img src="https://facts.net/wp-content/uploads/2023/08/30-facts-about-ving-rhames-1691856576.jpg" alt="Ving Rhames as Luther Stickell" style="width: 91.5%; height: auto;" >
+      <p><strong>VING RHAMES - LUTHER STICKELL</strong></p>
+    </div>
+
+    <div class="cast-card text-center">
+      <img src="https://www.bigissue.com/wp-content/uploads/2022/07/1522_YS_2.jpg" jsaction="" class="sFlh5c FyHeAf iPVvYb" alt="Simon Pegg as Benji Dunn" style="width: 94%; height: auto;">
+      <p><strong>SIMON PEGG - BENJI DUNN</strong></p>
+    </div>
+
+    <div class="cast-card text-center">
+      <img src="https://www.pbs.org/national-memorial-day-concert/wp-content/uploads/2025/05/Esai_Morales_Headshot.jpg" alt="Esai Morales as Gabriel" style="width: 92%; height: auto;">
+      <p><strong>ESAI MORALES - GABRIEL</strong></p>
+    </div>
+
+    <div class="cast-card text-center">
+      <img src="https://i.imgur.com/mJqgBJ1.png" alt="Pom Klementieff as Paris" style="width: 87%; height: auto;">
+      <p><strong>POM KLEMENTIEFF - PARIS</strong></p>
+    </div>
+
+    <div class="cast-card text-center">
+      <img src="https://i.imgur.com/ad4Ov2g.png" alt="Henry Czerny as Eugene Kittridge:" style= "width: 91%; height: auto;">
+      <p><strong>HENRY CZERNY - EUGENE KITTRIDGE</strong></p>
+    </div>
+
+    <div class="cast-card text-center">
+      <img src="https://i.ytimg.com/vi/aR27yOq4GsA/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&amp;rs=AOn4CLAxYHYRMrfvor_GoxZiggyNb5oUbQ" alt="Angela Bassett as Erika Sloane" style="width: 95%; height: auto;">
+      <p><strong>ANGELA BASSETT - ERIKA SLOANE</strong></p>
+    </div>
+
+    <div class="cast-card text-center">
+      <img src="https://i.imgur.com/gphok4e.png" alt="Holt McCallany as Serling Bernstein" style="width: 91%; height: auto;">
+      <p><strong>HOLT McCALLANY - SERLING BERNSTEIN </strong></p>
+    </div>
+
+    <div class="cast-card text-center">
+      <img src="https://www.hollywoodreporter.com/wp-content/uploads/2018/01/gettyimages-683599418_copy_-_h_2017.jpg?w=1296&amp;h=730&amp;crop=1" alt="Janet McTeer as Walters" style="width: 95%; height: auto;">
+      <p><strong>JANET McTEER - WALTERS</strong></p>
+    </div>
+
+    <div class="cast-card text-center">
+      <img src="https://images.scottishritenmj.org/eyJidWNrZXQiOiJzY290dGlzaHJpdGUtY29ycG9yYXRlLWNyYWZ0Iiwia2V5IjoicHJvZC9oZXJvcy9NVGsyTVRNM01EUTBORGt3T0RVMU9UUXguanBlZyIsImVkaXRzIjp7InRvRm9ybWF0Ijoid2VicCIsIndlYnAiOnsicXVhbGl0eSI6ODAsIm5lYXJMb3NzbGVzcyI6dHJ1ZX0sInJlc2l6ZSI6eyJ3aWR0aCI6OTg0LCJmaXQiOiJjb3ZlciJ9fX0=?signature=d5fc3dc9f5bfa25ff4292f7a1ee98b0a90b7b77d15f3d655ed44929c77cb3db7" alt="Nick Offerman as General Sidney" style="width: 95%; height: auto;">
+      <p><strong>NICK OFFERMAN - GENERAL SIDNEY</strong></p>
+    </div>
+
+    <div class="cast-card text-center">
+      <img src="https://www.thelist.com/img/gallery/hannah-waddingham-the-complete-evolution-of-the-ted-lasso-star/l-intro-1687744125.jpg" alt="Hannah Waddingham as Rear Admiral Neely" style="width: 95%; height: auto;">
+      <p><strong>HANAH WADDINGHAM - REAR ADMIRAL NEELY</strong></p>
+    </div>
+  </div>
+</div>
+
+<div class="text-center">
+  <p class="lead" style="font-size: 5.00rem; color: #ffffff; font-weight: 600;">MOVIE PRODUCTION</p>
+</div>
+
+<div class="description-box">
+  <h3>THE PRODUCTION FOR 'MISSION IMPOSSIBLE: THE FINAL RECKONING'</h3>
+  <p>
+    The production of Mission: Impossible The Final Reckoning was a monumental effort that brought together one of the most experienced teams in the action genre. With filming taking place across multiple continents, the crew had to coordinate complex schedules, secure permits in challenging locations, and manage intense safety protocols. Tom Cruise remained fully committed to performing his own stunts, which included high-altitude skydives and a train sequence that was filmed on an actual moving locomotive. Each stunt required months of preparation, with engineers and safety experts working together to ensure everything went according to plan. The production emphasized realism by focusing on practical effects rather than relying heavily on computer graphics, which added to the authenticity and thrill of the action.
+   </p>
+   <p>
+    Director Christopher McQuarrie worked closely with the cast and crew to maintain the emotional weight of the story while delivering large-scale spectacle. The film’s narrative called for deeply personal moments as well as grand action sequences, requiring precise planning in terms of pacing and character development. Multiple sets were constructed from scratch, including a replica of an underground bunker and sections of a European city. Despite facing unpredictable weather and time constraints, the team delivered on every front. The production was a true testament to the dedication and craftsmanship that the Mission Impossible series is known for and served as a fitting conclusion to the saga.
+    </p>
+</div>
+
+
+<style>
+  :root {
+    --desc-box-width: 110%;         
+    --desc-box-padding: 20px;      
+    --desc-box-font-size: 1.5rem;  
+    --desc-box-title-size: 1.8rem; 
+  }
+
+  .description-box {
+    background-color: #1a1a1a;
+    color: #fff;
+    width: var(--desc-box-width);
+    padding: var(--desc-box-padding);
+    border-radius: 12px;
+    margin: 30px auto 50px auto;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    font-family: 'Mukta', sans-serif;
+    font-size: var(--desc-box-font-size);
+    line-height: 1.5;
+    text-align: center;
+  }
+
+  .description-box h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: var(--desc-box-title-size);
+    color: #09f109;
+  }
+
+  .description-box {
+  background-color: #262424;
+  padding: 30px;
+  margin: 30px auto;
+  border-radius: 15px;
+  color: #ffffff;
+  max-width: 95%;
+  box-shadow: 0 0 15px rgba(0, 255, 0, 0.3);
+}
+
+.cast-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  margin-top: 20px;
+}
+
+.cast-card {
+  background-color: #353232;
+  padding: 15px;
+  border-radius: 12px;
+  color: white;
+  box-shadow: 0 4px 12px rgba(0, 255, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.cast-card:hover {
+  transform: translateY(-5px);
+}
+
+.cast-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+</style>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

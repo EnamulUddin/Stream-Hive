@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Stream Hive</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Mukta&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Mukta', sans-serif;
+      background-color: #353232;
+    }
+
+    .navbar {
+      background-color: #353232;
+    }
+
+    .navbar-brand {
+      font-size: 1.8rem;
+      font-weight: bold;
+      color: rgb(9, 241, 9);
+    }
+
+    .nav-link {
+      font-size: 1.1rem;
+      color: #ffffff;
+      text-decoration: none;
+    }
+
+    .nav-link:hover {
+      color: #007bff;
+    }
+
+    .jumbotron {
+      background-image: url('../In-Class/css/homepage-hero-bg.jpeg');
+      background-position: center;
+      background-size: cover;
+      color: white;
+      text-align: center;
+      padding: 100px 0;
+      margin-bottom: 30px;
+      border-radius: 15px;
+    }
+
+    .jumbotron h1,
+    .jumbotron p {
+      color: rgb(9, 241, 9);
+    }
+
+    .category-card img {
+      width: 220px;
+      height: 420px;
+      object-fit: cover;
+      border-radius: 15px;
+      transition: none !important;
+      transform: none !important;
+    }
+
+    .category-card img:hover {
+      transform: none !important;
+      transition: none !important;
+    }
+
+    .category-card p {
+      font-weight: bold;
+      font-size: 1.2rem;
+      color: #ffffff;
+    }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      background-image: none;
+      width: 3rem;
+      height: 3rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      background-color: transparent;
+      color: rgb(9, 241, 9);
+      font-size: 2rem;
+      font-weight: bold;
+    }
+
+    .carousel-control-prev-icon::before,
+    .carousel-control-next-icon::before {
+      content: '';
+    }
+
+    .carousel-control-prev::after,
+    .carousel-control-next::after {
+      font-size: 3rem;
+      color: rgb(9, 241, 9);
+      font-weight: bold;
+    }
+
+    .carousel-control-prev::after {
+      content: '<';
+    }
+
+    .carousel-control-next::after {
+      content: '>';
+    }
+
+    .custom-row {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .custom-col {
+      flex: 0 0 45%;
+      max-width: 45%;
+    }
+
+    
+    .description-box {
+      background-color: #1a1a1a; 
+      color: #ffffff;            
+      padding: 20px;
+      border-radius: 12px;
+      max-width: 800px;
+      margin: 30px auto 50px auto; 
+      box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+      font-family: 'Mukta', sans-serif;
+      line-height: 1.5;
+      text-align: center;
+    }
+
+    .description-box h3 {
+      margin-top: 0;
+      margin-bottom: 10px;
+      font-weight: 700;
+      font-size: 1.8rem;
+      color: #09f109;  
+    }
+
+    .description-box p {
+      font-size: 1.1rem;
+    }
+
+  </style>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">STREAM HIVE</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="p-5 mb-4 jumbotron" style="background-color: #353232; border-radius: 20px; text-align: center;">
+      <h1 class="display-2" style="font-size: 7.5rem; color: #00ff00; font-weight: 1000; letter-spacing: 1px;">STREAM HIVE</h1>
+    </div>
+    <div class="text-center">
+      <p class="lead" style="font-size: 5.00rem; color: #ffffff; font-weight: 600;">MONEY HEIST</p>
+    </div>
+  </div>
+
+  <div id="tabCarousel" class="carousel slide my-5" data-bs-ride="carousel" data-bs-interval="3000">
+    <div class="carousel-inner">
+
+      <div class="carousel-item active">
+        <div class="custom-row">
+          <div class="custom-col">
+            <div class="category-card text-center">
+              <img src="https://i.imgur.com/qtL6M6h.png" style="width: 76.8%; height: auto;">
+            </div>
+          </div>
+          <div class="custom-col">
+            <div class="category-card text-center">
+              <img src="https://i.imgur.com/scTycwP.png" style="width: 76%; height: auto;">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <div class="custom-row">
+          <div class="custom-col">
+            <div class="category-card text-center">
+              <img src="https://i.imgur.com/thW9aBK.png" style="width: 68.8%; height: auto;">
+            </div>
+          </div>
+          <div class="custom-col">
+            <div class="category-card text-center">
+              <img src="https://i.imgur.com/Kxyd0V9.png" style="width: 76%; height: auto;">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <div class="custom-row">
+          <div class="custom-col">
+            <div class="category-card text-center">
+              <img src="https://i.imgur.com/jYxhbA5.png" style="width: 77.8%; height: auto;">
+            </div>
+          </div>
+          <div class="custom-col">
+            <div class="category-card text-center">
+              <img src="https://i.imgur.com/nTNcnoE.png" style="width: 78%; height: auto;">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<div class="text-center">
+  <p class="lead" style="font-size: 5.00rem; color: #ffffff; font-weight: 600;">SERIES PLOT</p>
+</div>
+
+<div class="description-box">
+  <h3>MONEY HEIST</h3>
+  <p>
+Money Heist (La Casa de Papel) is a Spanish heist crime drama that follows a criminal mastermind known as The Professor, who recruits a group of skilled individuals to carry out the biggest heist in recorded history. The core group, each using city names as aliases (like Tokyo, Berlin, Nairobi, and Rio), attempt to break into Spain’s Royal Mint and print billions of euros, all while fending off police forces and managing a growing number of emotional and strategic complications. The series blends high-stakes action with deep psychological tension, exploring themes of resistance, loyalty, identity, love, and the consequences of crime. What begins as a meticulous plan slowly unravels under the weight of personal conflicts, moral dilemmas, and intense pressure, all while The Professor manipulates events from the outside.
+   </p>
+</div>
+
+<div class="text-center">
+  <p class="lead" style="font-size: 6.00rem; color: #ffffff; font-weight: 600;">SERIES CAST</p>
+</div>
+
+<div class="description-box">
+  <h3 style="color: #00ff00;">MAIN SERIES CAST FOR 'MONEY HEIST'</h3>
+  
+  <div class="cast-grid">
+    <div class="cast-card text-center">
+      <img src="https://i.imgur.com/1e5i79z.png" alt="Sergio Marquina as Alvaro Morte" style="width: 93.6%; height: auto;">
+      <p><strong>SERGIO MARQUINA - ALVARO MORTE</strong></p>
+    </div>
+
+    <div class="cast-card text-center">
+      <img src="https://i.imgur.com/p9U6iWB.png" alt="Silene Oliveira as Ursula Corbeno" style="width: 87.4%; height: auto;">
+      <p><strong>SILENE OLIVEIRA - URSULA CORBENO</strong></p>
+    </div>
+
+    <div class="cast-card text-center">
+      <img src="https://i.imgur.com/dGlbzyt.png" alt="Raquel Murillo as Itziar Ituno" style="width: 93.2%; height: auto;" >
+      <p><strong>RAQUEL MURILLO - ITZIAR ITUNO</strong></p>
+    </div>
+
+    <div class="cast-card text-center">
+      <img src="https://i.imgur.com/DHp96Go.png" alt="Andres de Fonollosa as Pedro Alonso" style="width: 88.4%; height: auto;">
+      <p><strong>ANDRES DE FONOLLOSA - PEDRO ALONSO</strong></p>
+    </div>
+
+    <div class="cast-card text-center">
+      <img src="https://i.imgur.com/1RbFBBU.png" alt="Agustin Ramos as Paco Tous" style="width: 81%; height: auto;">
+      <p><strong>AGUSTIN RAMOS - PACO TOUS</strong></p>
+    </div>
+
+    <div class="cast-card text-center">
+      <img src="https://i.imgur.com/koigXtJ.png" alt="Agata Jimenez as Alba Flores" style="width: 87.5%; height: auto;">
+      <p><strong>AGATA JIMENEZ - ALBA FLORES</strong></p>
+    </div>
+</div>
+
+<div class="text-center">
+  <p class="lead" style="font-size: 5.00rem; color: #ffffff; font-weight: 600;">SEASON RECAP</p>
+</div>
+
+<div class="description-box">
+  <h3>SEASON 1</h3>
+  <p>
+The story begins with The Professor assembling eight criminals for a bold mission: to break into the Royal Mint of Spain and print €2.4 billion while holding hostages inside. Over eleven days, the group must navigate rising tensions among themselves, growing pressure from law enforcement, and emotional entanglements particularly Tokyo’s impulsiveness and her romance with Rio. Berlin takes control inside the Mint, revealing both leadership and cruelty, while The Professor manipulates Inspector Raquel Murillo from the outside, eventually falling for her. The plan nearly falls apart multiple times, but after several deaths, including Oslo, Moscow, and Berlin, the surviving members manage to escape with the money, achieving their mission.
+  </p>
+   <h3>SEASON 2</h3>
+  <p>
+Three years after the Mint heist, the group is scattered and living luxuriously until Rio is captured by the authorities. In response, The Professor reunites the crew and launches a new heist this time on the Bank of Spain. Their objective is to steal tons of gold and rescue Rio, using public sympathy as part of their strategy. New faces join the team, and Berlin is revealed to have helped plan this second heist before his death. Inside the bank, the crew faces elite security forces and political manipulation. Tensions rise when a brutal security chief, Gandía, kills Nairobi, devastating the team. The Professor is also cornered by Inspector Alicia Sierra, ending the season on a suspenseful cliffhanger.
+   </p>
+   <h3>SEASON 3</h3>
+  <p>
+The final season opens with the team still trapped in the Bank of Spain, dealing with the aftermath of Nairobi's death and Gandía's attacks. The military is brought in, escalating the violence. Meanwhile, The Professor is captured and tortured by Alicia Sierra, who eventually goes into labor, leading to a fragile alliance between the two. As chaos erupts inside the bank, Tokyo sacrifices herself to stop advancing soldiers, giving the team a fighting chance. The second half focuses on the team's effort to melt and extract the gold, while The Professor publicly negotiates with the government for the team’s release. Despite setbacks and betrayals, the Professor outsmarts the authorities, stages a fake gold recovery, and secures full pardons for the surviving members. The show ends with the team escaping, finally free after years of struggle.
+   </p>
+   <h3>SEASON 4</h3>
+  <p>
+The season begins with Nairobi critically injured from a sniper shot, prompting the team to perform a risky surgery to save her life. Meanwhile, Palermo, feeling sidelined, releases Gandía, the Bank's head of security, who becomes a significant threat by taking Nairobi hostage and ultimately killing her. The Professor, believing Lisbon has been executed, is devastated but later discovers she's alive and devises a plan to rescue her. With the help of external allies, Lisbon is successfully smuggled into the Bank, rejoining the team. The season concludes with a tense cliffhanger: Inspector Alicia Sierra locates the Professor's hideout and confronts him at gunpoint, setting the stage for the next installment.
+   </p>
+   <h3>SEASON FINALE</h3>
+  <p>
+The final season of Money Heist unfolds in two volumes, each comprising five episodes. The gang remains trapped inside the Bank of Spain for over 100 hours, mourning the loss of Nairobi and grappling with escalating challenges. The Professor is captured by Alicia Sierra, leaving the team leaderless as the military prepares to storm the bank. Amid intense confrontations, Tokyo sacrifices herself to ensure her teammates' survival. The second volume delves into the emotional aftermath, with the Professor orchestrating a plan to extract the gold and fake its recovery to secure the team's freedom. Through strategic maneuvers and negotiations, the gang achieves their objective, concluding the series with a poignant farewell. 
+   </p>
+</div>
+
+
+<style>
+  :root {
+    --desc-box-width: 110%;         
+    --desc-box-padding: 20px;      
+    --desc-box-font-size: 1.5rem;  
+    --desc-box-title-size: 1.8rem; 
+  }
+
+  .description-box {
+    background-color: #1a1a1a;
+    color: #fff;
+    width: var(--desc-box-width);
+    padding: var(--desc-box-padding);
+    border-radius: 12px;
+    margin: 30px auto 50px auto;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    font-family: 'Mukta', sans-serif;
+    font-size: var(--desc-box-font-size);
+    line-height: 1.5;
+    text-align: center;
+  }
+
+  .description-box h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: var(--desc-box-title-size);
+    color: #09f109;
+  }
+
+  .description-box {
+  background-color: #262424;
+  padding: 30px;
+  margin: 30px auto;
+  border-radius: 15px;
+  color: #ffffff;
+  max-width: 95%;
+  box-shadow: 0 0 15px rgba(0, 255, 0, 0.3);
+}
+
+.cast-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  margin-top: 20px;
+}
+
+.cast-card {
+  background-color: #353232;
+  padding: 15px;
+  border-radius: 12px;
+  color: white;
+  box-shadow: 0 4px 12px rgba(0, 255, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.cast-card:hover {
+  transform: translateY(-5px);
+}
+
+.cast-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+</style>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Stream Hive</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Mukta&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Mukta', sans-serif;
+      background-color: #353232;
+    }
+
+    .navbar {
+      background-color: #353232;
+    }
+
+    .navbar-brand {
+      font-size: 1.8rem;
+      font-weight: bold;
+      color: rgb(9, 241, 9);
+    }
+
+    .nav-link {
+      font-size: 1.1rem;
+      color: #ffffff;
+      text-decoration: none;
+    }
+
+    .nav-link:hover {
+      color: #007bff;
+    }
+
+    .jumbotron {
+      background-image: url('../In-Class/css/homepage-hero-bg.jpeg');
+      background-position: center;
+      background-size: cover;
+      color: white;
+      text-align: center;
+      padding: 100px 0;
+      margin-bottom: 30px;
+      border-radius: 15px;
+    }
+
+    .jumbotron h1,
+    .jumbotron p {
+      color: rgb(9, 241, 9);
+    }
+
+    .category-card img {
+      width: 220px;
+      height: 420px;
+      object-fit: cover;
+      border-radius: 15px;
+      transition: none !important;
+      transform: none !important;
+    }
+
+    .category-card img:hover {
+      transform: none !important;
+      transition: none !important;
+    }
+
+    .category-card p {
+      font-weight: bold;
+      font-size: 1.2rem;
+      color: #ffffff;
+    }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      background-image: none;
+      width: 3rem;
+      height: 3rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      background-color: transparent;
+      color: rgb(9, 241, 9);
+      font-size: 2rem;
+      font-weight: bold;
+    }
+
+    .carousel-control-prev-icon::before,
+    .carousel-control-next-icon::before {
+      content: '';
+    }
+
+    .carousel-control-prev::after,
+    .carousel-control-next::after {
+      font-size: 3rem;
+      color: rgb(9, 241, 9);
+      font-weight: bold;
+    }
+
+    .carousel-control-prev::after {
+      content: '<';
+    }
+
+    .carousel-control-next::after {
+      content: '>';
+    }
+
+    .custom-row {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .custom-col {
+      flex: 0 0 45%;
+      max-width: 45%;
+    }
+
+    
+    .description-box {
+      background-color: #1a1a1a; 
+      color: #ffffff;            
+      padding: 20px;
+      border-radius: 12px;
+      max-width: 800px;
+      margin: 30px auto 50px auto; 
+      box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+      font-family: 'Mukta', sans-serif;
+      line-height: 1.5;
+      text-align: center;
+    }
+
+    .description-box h3 {
+      margin-top: 0;
+      margin-bottom: 10px;
+      font-weight: 700;
+      font-size: 1.8rem;
+      color: #09f109;  
+    }
+
+    .description-box p {
+      font-size: 1.1rem;
+    }
+
+  </style>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">STREAM HIVE</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="p-5 mb-4 jumbotron" style="background-color: #353232; border-radius: 20px; text-align: center;">
+      <h1 class="display-2" style="font-size: 7.5rem; color: #00ff00; font-weight: 1000; letter-spacing: 1px;">STREAM HIVE</h1>
+    </div>
+    <div class="text-center">
+      <p class="lead" style="font-size: 5.00rem; color: #ffffff; font-weight: 600;">MARVEL: THUNDERBOLTS</p>
+    </div>
+  </div>
+
+  <div id="tabCarousel" class="carousel slide my-5" data-bs-ride="carousel" data-bs-interval="3000">
+    <div class="carousel-inner">
+
+      <div class="carousel-item active">
+        <div class="custom-row">
+          <div class="custom-col">
+            <div class="category-card text-center">
+              <img src="https://media.gq.com/photos/6813f81945b45dc112ecf732/16:9/w_2560%2Cc_limit/MCDTHUN_WD003.jpg" style="width: 80%; height: auto;">
+            </div>
+          </div>
+          <div class="custom-col">
+            <div class="category-card text-center">
+              <img src="https://helios-i.mashable.com/imagery/articles/07IKZxReK8Zr1lcl5q6WOUM/hero-image.fill.size_1248x702.v1746034877.jpg" style="width: 80%; height: auto;">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <div class="custom-row">
+          <div class="custom-col">
+            <div class="category-card text-center">
+              <img src="https://i.ytimg.com/vi/znd_NWz7loA/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&amp;rs=AOn4CLCu3pamcq75Gqk35SpoPIePMYaiyA" style="width: 79.9%; height: auto;">
+            </div>
+          </div>
+          <div class="custom-col">
+            <div class="category-card text-center">
+              <img src="https://hips.hearstapps.com/hmg-prod/images/sebastian-stan-thunderbolts-teaser-trailer-66f16a3200ff8.jpg?crop=0.7379629629629629xw:1xh;center,top&amp;resize=1200:*" style="width: 80%; height: auto;">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <div class="custom-row">
+          <div class="custom-col">
+            <div class="category-card text-center">
+              <img src="https://www.comingsoon.net/wp-content/uploads/sites/3/2025/05/Thunderbolts-Julia.jpg?w=1024" jsaction="" class="sFlh5c FyHeAf iPVvYb" style="width: 80%; height: auto;">
+            </div>
+          </div>
+          <div class="custom-col">
+            <div class="category-card text-center">
+              <img src="https://i.imgur.com/p41xSd4.png" style="width: 76%; height: auto;">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<div class="text-center">
+  <p class="lead" style="font-size: 5.00rem; color: #ffffff; font-weight: 600;">MOVIE PLOT</p>
+</div>
+
+<div class="description-box">
+  <h3>MARVEL: THUNDERBOLTS</h3>
+  <p>
+    The film begins in a world still recovering from the fallout of past superhero conflicts. With the Avengers disbanded and global tensions rising, the government takes a new approach by assembling its own team of enhanced individuals. Valentina Allegra de Fontaine brings together a group of unlikely allies with questionable pasts including Yelena Belova, Bucky Barnes, Red Guardian, Ghost, Taskmaster, and U S Agent. The Thunderbolts are formed under the promise of redemption and purpose, but from the very start, it is clear they are viewed more as weapons than heroes. Their mission is to hunt down a rogue scientist connected to stolen vibranium tech. As the team begins to work together, their fractured personalities clash and old traumas resurface. The first mission appears successful, but clues suggest that their leader may be hiding the true reason for their existence
+   </p>
+   <p>
+    As the Thunderbolts continue their assignments, they uncover classified data hinting at a covert project linked to Hydra's dormant weapon programs. The missions grow more dangerous and morally ambiguous, pushing the team to question their orders and each other. Bucky begins to suspect they are being used for an agenda that has nothing to do with protecting people. Yelena and Ghost start digging deeper into Val’s files and discover evidence of staged attacks meant to justify the Thunderbolts' formation. Distrust within the team escalates, especially after a mission goes horribly wrong and civilians are caught in the crossfire. Realizing they can no longer blindly follow commands, the team goes rogue and sets out to expose the truth, fully aware that doing so will make them enemies of the state.
+    </p>
+    <p>
+    The final act takes the team to an abandoned Hydra facility where Valentina plans to activate a powerful experiment capable of manipulating enhanced individuals. Determined to stop her, the Thunderbolts infiltrate the site, working together not as soldiers but as allies with shared purpose. In an explosive showdown, they destroy the device and confront Val, exposing her secret operations to the world. Although their actions save lives, the team is disavowed and forced into hiding. In a quiet closing scene, Yelena and Bucky talk about what it means to fight for something real and consider the path ahead. The film ends on an uncertain but hopeful note as the world wonders what role these imperfect heroes will play next. A mid credits scene reveals a new powerful figure observing from afar, hinting at future challenges the team will face.
+  </p>
+</div>
+
+<div class="text-center">
+  <p class="lead" style="font-size: 6.00rem; color: #ffffff; font-weight: 600;">MOVIE CAST</p>
+</div>
+
+<div class="description-box">
+  <h3 style="color: #00ff00;">MAIN MOVIE CAST FOR 'MARVEL: THUNDERBOLTS'</h3>
+  
+  <div class="cast-grid">
+    <div class="cast-card text-center">
+      <img src="https://www.hollywoodreporter.com/wp-content/uploads/2025/03/Florence-Featured.png?w=1296" alt="Florence Pugh as Yelena Belova" style="width: 93%; height: auto;">
+      <p><strong>FLORENCE PUGH - YELENA BELOVA</strong></p>
+    </div>
+
+    <div class="cast-card text-center">
+      <img src="https://i.imgur.com/CPiqIUn.png" alt="Sebastian Stan as Bucky Barnes" style="width: 90%; height: auto;">
+      <p><strong>SEBASTIAN STAN - BUCKY BARNES</strong></p>
+    </div>
+
+    <div class="cast-card text-center">
+      <img src="https://i.imgur.com/XQlNAqD.png" alt="David Harbour as Alexei Shostakov" style="width: 88.8%; height: auto;" >
+      <p><strong>DAVID HARBOUR - ALEXEI SHOSTAKOV</strong></p>
+    </div>
+
+    <div class="cast-card text-center">
+      <img src="https://images3.alphacoders.com/114/1142928.jpg" alt="Wyatt Russell as John Walker" style="width: 94%; height: auto;">
+      <p><strong>WYATT RUSSELL - JOHN WALKER</strong></p>
+    </div>
+
+    <div class="cast-card text-center">
+      <img src="https://imageio.forbes.com/specials-images/imageserve/68153d91e7807a63d5826747/Hannah-John-Kamen-in--Thunderbolts---/960x0.jpg?format=jpg&amp;width=960" alt="Hanah John-Kamen as Ava Starr" style="width: 94%; height: auto;">
+      <p><strong>HANAH JOHN-KAMEN - AVA STARR</strong></p>
+    </div>
+
+    <div class="cast-card text-center">
+      <img src="https://i.imgur.com/uaRq0AN.png" alt="Olga Kurylenko as Antonia Dreykov" style="width: 95%; height: auto;">
+      <p><strong>OLGA KURYLENKO - ANTONIA DREYKOV/TASKMASTER</strong></p>
+    </div>
+
+    <div class="cast-card text-center">
+      <img src="https://i.imgur.com/pBGcwPL.png" alt="Lewis Pullman as Robert Bob Reynolds" style= "width: 94%; height: auto;">
+      <p><strong>LEWIS PULLMAN - ROBERT BOB REYNOLDS</strong></p>
+    </div>
+
+    <div class="cast-card text-center">
+      <img src="https://www.superherohype.com/wp-content/uploads/sites/4/2025/05/Thunderbolts-Julia-SHH.jpg?w=1024" jsaction="" class="sFlh5c FyHeAf iPVvYb" alt="Julia Louis-Dreyfus as Contessa Valentina Allegra de Fontaine" style="width: 95%; height: auto;">
+      <p><strong>JULIA LOUIS-DREYFUS - ALLEGRA DE FOTAINE</strong></p>
+    </div>
+
+    <div class="cast-card text-center">
+      <img src="https://drawyourbox.com/wp-content/uploads/2025/05/Geraldine-Viswanathan-1.jpg" alt="Geraldine Viswanathan as Mel" style="width: 95%; height: auto;">
+      <p><strong>GERALDINE VISWANATHAN - MEL</strong></p>
+    </div>
+
+    <div class="cast-card text-center">
+      <img src="https://images.squarespace-cdn.com/content/v1/51b3dc8ee4b051b96ceb10de/943e03f3-0229-4f14-80ec-8df9ea640d2d/harrison-ford-will-also-appear-in-captain-america-new-world-order-as-general-thunderbolt-ross.jpg" alt="Harrison Ford as President Thaddeus Ross" style="width: 94%; height: auto;">
+      <p><strong>HARRISON FORD - PRESIDENT ROSS</strong></p>
+    </div>
+
+    <div class="cast-card text-center">
+      <img src="https://static.public.fr/wp-content/uploads/2024/03/Ca-a-vraiment-bouleverse-mon-monde-Kerry-Washington-revele-avoir-appris-a-41-ans-qu-elle-n-etait-pas-la-fille-biologique-de-son-pere-9-1024x575.webp" alt="Kerry Washington as Monica Rappaccini" style="width: 95%; height: auto;">
+      <p><strong>KERRY WASHINGTON - MONICA RAPPACCINI (A.I.M) </strong></p>
+    </div>
+
+    <div class="cast-card text-center">
+      <img src="https://variety.com/wp-content/uploads/2023/06/Variety-Actors-on-Actors-16x9-Steven-Yeun.jpg?w=1000&amp;h=563&amp;crop=1" alt="Steven Yeun as Amadeus Cho / Brawn" style="width: 95%; height: auto;">
+      <p><strong>STEVEN YEUN - AMADEUS CHO</strong></p>
+    </div>
+  </div>
+</div>
+
+<div class="text-center">
+  <p class="lead" style="font-size: 5.00rem; color: #ffffff; font-weight: 600;">MOVIE PRODUCTION</p>
+</div>
+
+<div class="description-box">
+  <h3>THE PRODUCTION FOR 'MARVEL: THUNDERBOLTS'</h3>
+  <p>
+    The production of Marvel: Thunderbolts was a complex yet rewarding journey for everyone involved. From the beginning, the creative team set out to craft a darker, more grounded entry into the Marvel Cinematic Universe that explored redemption and trust among morally complicated characters. Filming began with high anticipation as returning actors like Sebastian Stan and Florence Pugh brought emotional depth and experience to the ensemble. The production schedule was carefully planned to accommodate the physical demands of the action-heavy sequences and the emotional arcs that define the team. Practical effects were blended with CGI to create gritty, realistic environments that reflect the tone of the film. Locations across Atlanta and international spots were used to bring a global scale to the story, while maintaining a raw and intense visual style.
+   </p>
+   <p>
+    Behind the scenes, the cast developed a strong camaraderie, mirroring the evolving trust within the team they portrayed. Director Jake Schreier worked closely with the actors to explore each character's internal conflict and relationship dynamics. The writers collaborated closely with Marvel Studios to ensure the film tied into the larger MCU without losing its own voice. Costume and production designers updated existing suits and gear to reflect the characters' transition from former adversaries to complex antiheroes. Delays due to industry-wide events required flexibility, but the team remained focused on delivering a bold and emotionally charged story. The final product is a film that balances explosive action with psychological depth and sets the stage for the future of unconventional heroes in the MCU.
+    </p>
+</div>
+
+
+<style>
+  :root {
+    --desc-box-width: 110%;         
+    --desc-box-padding: 20px;      
+    --desc-box-font-size: 1.5rem;  
+    --desc-box-title-size: 1.8rem; 
+  }
+
+  .description-box {
+    background-color: #1a1a1a;
+    color: #fff;
+    width: var(--desc-box-width);
+    padding: var(--desc-box-padding);
+    border-radius: 12px;
+    margin: 30px auto 50px auto;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    font-family: 'Mukta', sans-serif;
+    font-size: var(--desc-box-font-size);
+    line-height: 1.5;
+    text-align: center;
+  }
+
+  .description-box h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: var(--desc-box-title-size);
+    color: #09f109;
+  }
+
+  .description-box {
+  background-color: #262424;
+  padding: 30px;
+  margin: 30px auto;
+  border-radius: 15px;
+  color: #ffffff;
+  max-width: 95%;
+  box-shadow: 0 0 15px rgba(0, 255, 0, 0.3);
+}
+
+.cast-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  margin-top: 20px;
+}
+
+.cast-card {
+  background-color: #353232;
+  padding: 15px;
+  border-radius: 12px;
+  color: white;
+  box-shadow: 0 4px 12px rgba(0, 255, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.cast-card:hover {
+  transform: translateY(-5px);
+}
+
+.cast-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+</style>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

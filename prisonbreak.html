@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Stream Hive</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Mukta&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Mukta', sans-serif;
+      background-color: #353232;
+    }
+
+    .navbar {
+      background-color: #353232;
+    }
+
+    .navbar-brand {
+      font-size: 1.8rem;
+      font-weight: bold;
+      color: rgb(9, 241, 9);
+    }
+
+    .nav-link {
+      font-size: 1.1rem;
+      color: #ffffff;
+      text-decoration: none;
+    }
+
+    .nav-link:hover {
+      color: #007bff;
+    }
+
+    .jumbotron {
+      background-image: url('../In-Class/css/homepage-hero-bg.jpeg');
+      background-position: center;
+      background-size: cover;
+      color: white;
+      text-align: center;
+      padding: 100px 0;
+      margin-bottom: 30px;
+      border-radius: 15px;
+    }
+
+    .jumbotron h1,
+    .jumbotron p {
+      color: rgb(9, 241, 9);
+    }
+
+    .category-card img {
+      width: 220px;
+      height: 420px;
+      object-fit: cover;
+      border-radius: 15px;
+      transition: none !important;
+      transform: none !important;
+    }
+
+    .category-card img:hover {
+      transform: none !important;
+      transition: none !important;
+    }
+
+    .category-card p {
+      font-weight: bold;
+      font-size: 1.2rem;
+      color: #ffffff;
+    }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      background-image: none;
+      width: 3rem;
+      height: 3rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      background-color: transparent;
+      color: rgb(9, 241, 9);
+      font-size: 2rem;
+      font-weight: bold;
+    }
+
+    .carousel-control-prev-icon::before,
+    .carousel-control-next-icon::before {
+      content: '';
+    }
+
+    .carousel-control-prev::after,
+    .carousel-control-next::after {
+      font-size: 3rem;
+      color: rgb(9, 241, 9);
+      font-weight: bold;
+    }
+
+    .carousel-control-prev::after {
+      content: '<';
+    }
+
+    .carousel-control-next::after {
+      content: '>';
+    }
+
+    .custom-row {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .custom-col {
+      flex: 0 0 45%;
+      max-width: 45%;
+    }
+
+    
+    .description-box {
+      background-color: #1a1a1a; 
+      color: #ffffff;            
+      padding: 20px;
+      border-radius: 12px;
+      max-width: 800px;
+      margin: 30px auto 50px auto; 
+      box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+      font-family: 'Mukta', sans-serif;
+      line-height: 1.5;
+      text-align: center;
+    }
+
+    .description-box h3 {
+      margin-top: 0;
+      margin-bottom: 10px;
+      font-weight: 700;
+      font-size: 1.8rem;
+      color: #09f109;  
+    }
+
+    .description-box p {
+      font-size: 1.1rem;
+    }
+
+  </style>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">STREAM HIVE</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="p-5 mb-4 jumbotron" style="background-color: #353232; border-radius: 20px; text-align: center;">
+      <h1 class="display-2" style="font-size: 7.5rem; color: #00ff00; font-weight: 1000; letter-spacing: 1px;">STREAM HIVE</h1>
+    </div>
+    <div class="text-center">
+      <p class="lead" style="font-size: 5.00rem; color: #ffffff; font-weight: 600;">PRISON BREAK</p>
+    </div>
+  </div>
+
+  <div id="tabCarousel" class="carousel slide my-5" data-bs-ride="carousel" data-bs-interval="3000">
+    <div class="carousel-inner">
+
+      <div class="carousel-item active">
+        <div class="custom-row">
+          <div class="custom-col">
+            <div class="category-card text-center">
+              <img src="https://i.imgur.com/oovLlLr.png" style="width: 69.4%; height: auto;">
+            </div>
+          </div>
+          <div class="custom-col">
+            <div class="category-card text-center">
+              <img src="https://i.imgur.com/COoccto.png" style="width: 71%; height: auto;">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <div class="custom-row">
+          <div class="custom-col">
+            <div class="category-card text-center">
+              <img src="https://wallpapercat.com/w/full/b/6/2/1854179-1920x1080-desktop-full-hd-prison-break-tv-series-wallpaper-photo.jpg" style="width: 79%; height: auto;">
+            </div>
+          </div>
+          <div class="custom-col">
+            <div class="category-card text-center">
+              <img src="https://i.imgur.com/qAwRAUu.png" style="width: 71.6%; height: auto;">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <div class="custom-row">
+          <div class="custom-col">
+            <div class="category-card text-center">
+              <img src="https://i.imgur.com/3Fuj2KK.png" style="width: 73%; height: auto;">
+            </div>
+          </div>
+          <div class="custom-col">
+            <div class="category-card text-center">
+              <img src="https://i.imgur.com/xRklXB5.png" style="width: 74%; height: auto;">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<div class="text-center">
+  <p class="lead" style="font-size: 5.00rem; color: #ffffff; font-weight: 600;">SERIES PLOT</p>
+</div>
+
+<div class="description-box">
+  <h3>PRISON BREAK</h3>
+  <p>
+   Prison Break is an action-packed drama series that follows the story of Michael Scofield, a brilliant structural engineer who deliberately gets himself incarcerated in order to break his wrongly convicted brother, Lincoln Burrows, out of prison before his execution. What begins as a daring escape plan soon evolves into a high-stakes battle against a powerful and corrupt organization known as The Company, which is behind Lincoln’s framing and many other government conspiracies. As the brothers and their allies navigate life on the run, multiple prisons, and international threats, they face betrayal, loss, and shifting alliances, all while trying to expose the truth and protect the people they love. Throughout its five-season run, the series explores themes of loyalty, sacrifice, and redemption as Michael continually risks everything to outsmart his enemies and reunite with his family, proving that no prison is inescapable with enough determination and intellect.
+   </p>
+</div>
+
+<div class="text-center">
+  <p class="lead" style="font-size: 6.00rem; color: #ffffff; font-weight: 600;">SERIES CAST</p>
+</div>
+
+<div class="description-box">
+  <h3 style="color: #00ff00;">MAIN SERIES CAST FOR 'PRISON BREAK'</h3>
+  
+  <div class="cast-grid">
+    <div class="cast-card text-center">
+      <img src="https://i.imgur.com/8nns3AW.png" alt="Wentworth Miller as Michael Scofield" style="width: 90.3%; height: auto;">
+      <p><strong>WENTWORTH MILLER - MICHEAL SCOFIELD</strong></p>
+    </div>
+
+    <div class="cast-card text-center">
+      <img src="https://i.imgur.com/IHw7CJA.png" alt="Dominic Purcell as Lincoln Burrows" style="width: 91%; height: auto;">
+      <p><strong>DOMINIC PURCELL - LINCOLN BURROWS</strong></p>
+    </div>
+
+    <div class="cast-card text-center">
+      <img src="https://i.imgur.com/fsuc4ny.png" alt="Sarah Wayne Callies as Sara Tancredi" style="width: 92%; height: auto;" >
+      <p><strong>SARAH WAYNE CALLIES - SARA TANCREDI</strong></p>
+    </div>
+
+    <div class="cast-card text-center">
+      <img src="https://i.imgur.com/FNxE7Ad.png" alt="Amaury Nolasco as Fernando Sucre" style="width: 83.3%; height: auto;">
+      <p><strong>AMAURY NOLASCO - FERNANDO SUCRE</strong></p>
+    </div>
+
+    <div class="cast-card text-center">
+      <img src="https://i.imgur.com/cpLmQWD.png" alt="Robert Knepper as T-Bag" style="width: 88%; height: auto;">
+      <p><strong>ROBERT KNEPPER - T-BAG</strong></p>
+    </div>
+
+    <div class="cast-card text-center">
+      <img src="https://i.imgur.com/kN17AHv.png" alt="William Fichtner as Alexander Mahone" style="width: 88.1%; height: auto;">
+      <p><strong>WILLIAM FICHTNER - ALEXANDER MAHONE</strong></p>
+    </div>
+</div>
+
+<div class="text-center">
+  <p class="lead" style="font-size: 5.00rem; color: #ffffff; font-weight: 600;">SEASON RECAP</p>
+</div>
+
+<div class="description-box">
+  <h3>SEASON 1</h3>
+  <p>
+ The first season follows the rescue of Lincoln Burrows, who is accused of murdering Terrence Steadman, the brother of the Vice President of the United States, Caroline Reynolds. Lincoln is sentenced to death and is incarcerated in Fox River State Penitentiary where he awaits his execution. Lincoln's brother, brilliant structural engineer Michael Scofield, is convinced of Lincoln's innocence and formulates an elaborate escape plan. In order to gain access to Fox River, Michael commits an armed robbery which results in him being sentenced to Fox River. In prison, Michael befriends the prison doctor Sara Tancredi when he pretends to suffer from Type 1 diabetes, in order to gain daily access to the prison's infirmary, where he receives his daily insulin shots. The brothers' fight to ward off the execution is aided by their lifelong friend Veronica Donovan, who begins to investigate the conspiracy that put Lincoln in jail. However, they are hindered by covert agents, members of an organization called "The Company". The Company was responsible for framing Lincoln, and they did so because of Lincoln's father Aldo Burrows, and his former connections with The Company. The brothers, along with six inmates, Fernando Sucre, Theodore "T-Bag" Bagwell, Benjamin Miles "C-Note" Franklin, David "Tweener" Apolskis, John Abruzzi, and Charles "Haywire" Patoshik, who come to be known as the Fox River Eight, escape in the season's penultimate episode by using their prison privileges to dig an escape tunnel underneath the prison.
+   </p>
+   <h3>SEASON 2</h3>
+  <p>
+The second season begins eight hours after the escape, focusing mainly on the eight escapees. Series creator Paul Scheuring describes the second season as "The Fugitive times eight" and likens it to the "second half of The Great Escape".[10] The fugitives split up and journey to locations across the country with the authorities close behind them as they each pursue their individual goals. Brad Bellick gets fired from the prison where he worked as the main guard and chases after the inmates himself for the reward money. Several of the escapees reunite in search of a large cache of money buried long ago by another Fox River inmate, Charles Westmoreland. Federal agent Alexander Mahone is assigned to track down and capture the eight fugitives, but is revealed to be working for The Company, which wants all eight men dead. When Sara discovers her father, Governor Frank Tancredi, has been killed, she meets with Michael, remaining with him as the brothers try to bring down now-President Reynolds, a Company member. To ensure the brothers' safety, Sara allows herself to be arrested and faces trial. During the trial, the testimony of former Secret Service agent Paul Kellerman, who used to work for The Company-controlled President, exonerates Lincoln and Sara. Half of the escapees are killed or recaptured, but the brothers make it to Panama. Michael, T-Bag, Mahone, and Bellick are arrested by the Panamanian authorities and imprisoned at the Penitenciaría Federal de Sona.
+   </p>
+   <h3>SEASON 3</h3>
+  <p>
+ The third season follows Michael inside Sona and Lincoln on the outside in Panama. Sona is a prison run by the inmates and guarded only from the outside, due to a riot the year before. Inmates are only supplied with food and water and are expected to distribute and serve fellow inmates independently. The surrounding landscape is monitored by armed guards, who shoot at the sight of inmates escaping. Burrows is quickly contacted by Gretchen Morgan (a Company's operative who was in charge of operations in Panama) who kidnapped his son LJ and Sara, the woman Michael loves. He is told that The Company wants Scofield to break James Whistler out of Sona. The season follows Michael and Whistler's trials in formulating an escape plan, as Michael has to deal with extreme tension and as Lincoln deals with The Company's operative Gretchen Morgan. Sucre gets a job at the prison to aid Michael in his escape plan. When Lincoln attempts to rescue Sara and LJ following a clue provided by Sara, Gretchen claims to have beheaded Sara and sends Lincoln a head in a box as a warning. As the season ends, the pair manage to escape along with Mahone, and another inmate, Luis, leaving behind several accomplices including T-Bag and Bellick. Sucre's identity is discovered by a prison guard and he is thrown into Sona just after the escape. LJ and Sofia (who was captured for a guarantee that Whistler would go with her) are traded for Whistler, and Michael seeks revenge against Gretchen for Sara's death.
+   </p>
+   <h3>SEASON 4</h3>
+  <p>
+ The major storyline for the fourth season is about a team recruited by Homeland Security agent Don Self to obtain Scylla. Although the team initially believes it to be The Company's "black book", it is later revealed to contain information on an advanced renewable power cell. Over the course of the first half of the season, the team obtains cards to access Scylla and breaks into The Company's headquarters to steal it, Sara is discovered to be alive, Bellick dies when he sacrifices himself, and Self is revealed to be a double agent intent on selling Scylla to the highest bidder. Reluctantly, Lincoln decides to join The Company to get it back, while Michael suffers from a brain tumor. He is treated and operated on by The Company. Michael later learns that his mother, Christina is still alive and was an agent of The Company, who is revealed to acquire Scylla to sell to the highest bidder. Eventually, the series' main storyline of the past 4 seasons ends in Miami, where Scylla is recovered by Michael and the team, the General and The Company are taken down, and Sara kills Christina to protect her lover. The last two episodes of the season represent the series finale. In the penultimate episode, Sara is seen buying flowers in Panama with her toddler son, Michael, before visiting Michael's grave with Lincoln, Sucre and Mahone. The final episode and television movie Prison Break: The Final Break show what happened between the takedown of The Company and Michael's death. This story involves the incarceration of Sara in Miami-Dade county penitentiary for Christina's murder. The General and T-Bag are in the adjacent men's facility. The General wants Sara dead and has put a $100,000 bounty on her. Michael hears of the bounty and devises a plan to break Sara out. In the end, knowing that he is dying from a brain tumor, Michael sacrifices himself for Sara to escape.
+   </p>
+   <h3>SEASON FINALE</h3>
+  <p>
+ Seven years after Michael Scofield's apparent death, strange clues begin to surface suggesting he may still be alive. Lincoln Burrows, his brother, receives a mysterious photograph from an unknown source that seems to show Michael in a Yemeni prison. Initially skeptical, Lincoln begins to investigate, driven by the hope that his brother might have somehow survived.
+Lincoln’s search leads him to discover that Michael is being held in Ogygia Prison in Sana’a, Yemen, a notoriously harsh and dangerous facility, under a new identity named Kaniel Outis, a name linked to terrorist activities. To the world, Outis is a wanted criminal and a traitor but Lincoln believes otherwise.
+As political tensions in Yemen escalate into full-blown civil war, Lincoln teams up with C Note who has reformed and is now a devout Muslim with connections in the region. With the help of a local activist named Sheba, they navigate war-torn streets, rebel factions, and corrupt officials in an effort to reach Ogygia and uncover the truth.
+Inside the prison, Michael is alive but a changed man. He appears emotionally detached and distant, refusing to acknowledge Lincoln or explain his situation. He is imprisoned alongside a select group of inmates including the loyal and sharp Whip, the unpredictable and tech-savvy Ja, and the radical Ramal, a dangerous figure tied to extremist movements.
+As Lincoln digs deeper, he learns that Michael was recruited years ago by a shadowy US intelligence operative known only as Poseidon who used Michael’s unique skill set for covert missions. When Michael tried to leave the operation, Poseidon had him disappeared, stripping him of his identity and separating him from everyone he loved including Sara and their son.
+Lincoln realizes that Michael has been playing a long game from inside the prison, planning yet another impossible escape. But getting out of Ogygia is only the beginning. Once free, they must navigate a collapsing country, evade militants, and bring down a powerful enemy operating at the highest levels of the US government all while trying to reunite Michael with his family and clear his name.
+   </p>
+</div>
+
+
+<style>
+  :root {
+    --desc-box-width: 110%;         
+    --desc-box-padding: 20px;      
+    --desc-box-font-size: 1.5rem;  
+    --desc-box-title-size: 1.8rem; 
+  }
+
+  .description-box {
+    background-color: #1a1a1a;
+    color: #fff;
+    width: var(--desc-box-width);
+    padding: var(--desc-box-padding);
+    border-radius: 12px;
+    margin: 30px auto 50px auto;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    font-family: 'Mukta', sans-serif;
+    font-size: var(--desc-box-font-size);
+    line-height: 1.5;
+    text-align: center;
+  }
+
+  .description-box h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: var(--desc-box-title-size);
+    color: #09f109;
+  }
+
+  .description-box {
+  background-color: #262424;
+  padding: 30px;
+  margin: 30px auto;
+  border-radius: 15px;
+  color: #ffffff;
+  max-width: 95%;
+  box-shadow: 0 0 15px rgba(0, 255, 0, 0.3);
+}
+
+.cast-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  margin-top: 20px;
+}
+
+.cast-card {
+  background-color: #353232;
+  padding: 15px;
+  border-radius: 12px;
+  color: white;
+  box-shadow: 0 4px 12px rgba(0, 255, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.cast-card:hover {
+  transform: translateY(-5px);
+}
+
+.cast-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+</style>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

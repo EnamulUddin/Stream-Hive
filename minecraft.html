@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Stream Hive</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Mukta&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Mukta', sans-serif;
+      background-color: #353232;
+    }
+
+    .navbar {
+      background-color: #353232;
+    }
+
+    .navbar-brand {
+      font-size: 1.8rem;
+      font-weight: bold;
+      color: rgb(9, 241, 9);
+    }
+
+    .nav-link {
+      font-size: 1.1rem;
+      color: #ffffff;
+      text-decoration: none;
+    }
+
+    .nav-link:hover {
+      color: #007bff;
+    }
+
+    .jumbotron {
+      background-image: url('../In-Class/css/homepage-hero-bg.jpeg');
+      background-position: center;
+      background-size: cover;
+      color: white;
+      text-align: center;
+      padding: 100px 0;
+      margin-bottom: 30px;
+      border-radius: 15px;
+    }
+
+    .jumbotron h1,
+    .jumbotron p {
+      color: rgb(9, 241, 9);
+    }
+
+    .category-card img {
+      width: 220px;
+      height: 420px;
+      object-fit: cover;
+      border-radius: 15px;
+      transition: none !important;
+      transform: none !important;
+    }
+
+    .category-card img:hover {
+      transform: none !important;
+      transition: none !important;
+    }
+
+    .category-card p {
+      font-weight: bold;
+      font-size: 1.2rem;
+      color: #ffffff;
+    }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      background-image: none;
+      width: 3rem;
+      height: 3rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      background-color: transparent;
+      color: rgb(9, 241, 9);
+      font-size: 2rem;
+      font-weight: bold;
+    }
+
+    .carousel-control-prev-icon::before,
+    .carousel-control-next-icon::before {
+      content: '';
+    }
+
+    .carousel-control-prev::after,
+    .carousel-control-next::after {
+      font-size: 3rem;
+      color: rgb(9, 241, 9);
+      font-weight: bold;
+    }
+
+    .carousel-control-prev::after {
+      content: '<';
+    }
+
+    .carousel-control-next::after {
+      content: '>';
+    }
+
+    .custom-row {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .custom-col {
+      flex: 0 0 45%;
+      max-width: 45%;
+    }
+
+    
+    .description-box {
+      background-color: #1a1a1a; 
+      color: #ffffff;            
+      padding: 20px;
+      border-radius: 12px;
+      max-width: 800px;
+      margin: 30px auto 50px auto; 
+      box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+      font-family: 'Mukta', sans-serif;
+      line-height: 1.5;
+      text-align: center;
+    }
+
+    .description-box h3 {
+      margin-top: 0;
+      margin-bottom: 10px;
+      font-weight: 700;
+      font-size: 1.8rem;
+      color: #09f109;  
+    }
+
+    .description-box p {
+      font-size: 1.1rem;
+    }
+
+  </style>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">STREAM HIVE</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="information.html">Information</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="p-5 mb-4 jumbotron" style="background-color: #353232; border-radius: 20px; text-align: center;">
+      <h1 class="display-2" style="font-size: 7.5rem; color: #00ff00; font-weight: 1000; letter-spacing: 1px;">STREAM HIVE</h1>
+    </div>
+    <div class="text-center">
+      <p class="lead" style="font-size: 5.00rem; color: #ffffff; font-weight: 600;">A MINECRAFT MOVIE</p>
+    </div>
+  </div>
+
+  <div id="tabCarousel" class="carousel slide my-5" data-bs-ride="carousel" data-bs-interval="3000">
+    <div class="carousel-inner">
+
+      <div class="carousel-item active">
+        <div class="custom-row">
+          <div class="custom-col">
+            <div class="category-card text-center">
+              <img src="https://s.yimg.com/ny/api/res/1.2/RK50en1wWxl3bv5SPee29g--/YXBwaWQ9aGlnaGxhbmRlcjt3PTk2MDtoPTU0MA--/https://media.zenfs.com/en/cinemablend_388/12bf55d24d329f4f2f39b851100641fa" style="width: 80%; height: auto;">
+            </div>
+          </div>
+          <div class="custom-col">
+            <div class="category-card text-center">
+              <img src="https://m.media-amazon.com/images/M/MV5BNzY5MGEzNjktNzZmYS00Y2U0LWI2ZmItNGRjYTY0MjcxYTNmXkEyXkFqcGc@._V1_.jpg" style="width: 80%; height: auto;">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <div class="custom-row">
+          <div class="custom-col">
+            <div class="category-card text-center">
+              <img src="https://i.imgur.com/HSV5C0w.png" style="width: 83%; height: auto;">
+            </div>
+          </div>
+          <div class="custom-col">
+            <div class="category-card text-center">
+              <img src="https://img.pastemagazine.com/wp-content/avuploads/2025/04/02125840/a-minecraft-movie-spoiler-space-header.jpg" style="width: 80%; height: auto;">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <div class="custom-row">
+          <div class="custom-col">
+            <div class="category-card text-center">
+              <img src="https://cdn.mos.cms.futurecdn.net/zvoXfsuF6oi7hvyLkc9FcD.jpg" style="width: 80%; height: auto;">
+            </div>
+          </div>
+          <div class="custom-col">
+            <div class="category-card text-center">
+              <img src="https://i.imgur.com/6nLXiM8.png" style="width: 78%; height: auto;">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<div class="text-center">
+  <p class="lead" style="font-size: 5.00rem; color: #ffffff; font-weight: 600;">MOVIE PLOT</p>
+</div>
+
+<div class="description-box">
+  <h3>A MINECRAFT MOVIE</h3>
+  <p>
+    The film introduces Steve, a former doorknob salesman who discovers the Orb of Dominance and the Earth Crystal, leading him to the Overworld—a vibrant, blocky realm where creativity reigns. After building his own paradise, Steve stumbles upon a portal to the Nether and is captured by Malgosha, the piglin ruler who despises creativity. Steve manages to send his dog, Dennis, back to the real world with the Orb and Crystal for safekeeping. Years later, Garrett "The Garbage Man" Garrison, a former video game champion, acquires Steve's old belongings, including the mystical items. Along with siblings Henry and Natalie, and real estate agent Dawn, they are transported into the Overworld, embarking on a quest to restore balance and find their way home.
+   </p>
+   <p>
+    In the Overworld, the group faces numerous challenges, including hostile mobs like Piglins and Zombies. They seek out Steve, who has escaped the Nether, and together they journey through various biomes, forging alliances and gathering resources. Their adventure leads them to ancient structures and confrontations with formidable foes. As they prepare for the impending threat of Malgosha's invasion, the team builds an army of Iron Golems and strategizes to protect the Overworld from being transformed into a desolate version of the Nether.
+    </p>
+    <p>
+    The climax unfolds with an epic battle between the heroes' forces and Malgosha's piglin army. Steve engages in a fierce duel with Malgosha, while Henry retrieves the Orb of Destruction to dismantle the sky beam threatening the Overworld. With the combined efforts of the team, they succeed in defeating Malgosha and restoring sunlight to the realm. The group returns to the real world, inspired by their journey. Steve, having found a sense of belonging and purpose, decides to join them, embracing a new life enriched by creativity and friendship. 
+  </p>
+</div>
+
+<div class="text-center">
+  <p class="lead" style="font-size: 6.00rem; color: #ffffff; font-weight: 600;">MOVIE CAST</p>
+</div>
+
+<div class="description-box">
+  <h3 style="color: #00ff00;">MAIN MOVIE CAST FOR 'A MINECRAFT MOVIE'</h3>
+  
+  <div class="cast-grid">
+    <div class="cast-card text-center">
+      <img src="https://images.lesindesradios.fr/filters:format(webp)/radios/delta-fm/import/medias/2023/04/Jack-Black.jpg" alt="Jack Black as Steve" style="width: 100%; height: auto;">
+      <p><strong>JACK BLACK - STEVE</strong></p>
+    </div>
+
+    <div class="cast-card text-center">
+      <img src="https://media.gqmagazine.fr/photos/5c57ff7b005fc9498df46bf2/16:9/w_2560%2Cc_limit/GettyImages-1076845068.jpg" alt="Jason Momoa as Garrett" style="width: 92.3%; height: auto;">
+      <p><strong>JASON MOMOA - GARRETT</strong></p>
+    </div>
+
+    <div class="cast-card text-center">
+      <img src="https://hips.hearstapps.com/hmg-prod/images/emma-myers-minecraft-movie-trailer-66d85e114963c.jpg?crop=0.943xw:1.00xh;0.0343xw,0" alt="Emma Myers as Natalie" style="width: 92.6%; height: auto;" >
+      <p><strong>EMMA MYERS - NATALIE</strong></p>
+    </div>
+
+    <div class="cast-card text-center">
+      <img src="https://www.hollywoodreporter.com/wp-content/uploads/2024/03/danielle-brooks-oscars-rc-GettyImages-20742038710-2024.jpg" alt="Danielle Brooks as Dawn" style="width: 94%; height: auto;">
+      <p><strong>DANIELLE BROOKS - DAWN</strong></p>
+    </div>
+
+    <div class="cast-card text-center">
+      <img src="https://staticg.sportskeeda.com/editor/2025/03/aad45-17413519331782-1920.jpg" alt="Sebastian Hansen as Henry" style="width: 95%; height: auto;">
+      <p><strong>SEBASTIAN HANSEN - HENRY</strong></p>
+    </div>
+
+    <div class="cast-card text-center">
+      <img src="https://lifestyle.si.com/.image/t_share/MTk2MjUwNDY4NDAwMjQ0MjUx/jennifer-coolidge.jpg" alt="Jennifer Coolidge as Principal Marlene" style="width: 95%; height: auto;">
+      <p><strong>JENNIFER COOLIDGE - PRINCIPAL MARLENE</strong></p>
+    </div>
+  </div>
+</div>
+
+<div class="text-center">
+  <p class="lead" style="font-size: 5.00rem; color: #ffffff; font-weight: 600;">MOVIE PRODUCTION</p>
+</div>
+
+<div class="description-box">
+  <h3>THE PRODUCTION FOR 'A MINECRAFT MOVIE'</h3>
+  <p>
+    The production of A Minecraft Movie was a complex and ambitious undertaking that brought together a wide range of creative talent and cutting-edge technology. Development for the film began years before its 2025 release, with Mojang Studios partnering closely with Warner Bros. Pictures to ensure the Minecraft universe was authentically adapted to the big screen. The creators were determined to strike a balance between staying true to the open-world, blocky aesthetic of the beloved video game and introducing cinematic storytelling techniques that would appeal to both fans and newcomers. Early stages of production involved deep collaboration between game developers, screenwriters, animators, and world builders, all working to construct a narrative that reflected Minecraft’s core themes of exploration, survival, and creativity. Special care was taken in designing the world to retain its pixelated charm while enhancing it with dynamic lighting, textures, and depth made possible through modern CGI.
+   </p>
+   <p>
+    Filming itself combined live-action performances with extensive motion-capture technology to allow actors to seamlessly interact with the digital Minecraft environment. Locations were primarily created in virtual sets that mirrored iconic biomes from the game lush forests, treacherous caves, sprawling villages, and of course, the Nether and the End dimensions. Jack Black, who portrayed the heroic Steve, brought humor and heart to the role, while Jason Momoa and Emma Myers rounded out the ensemble with intense and emotional performances. Voice work was recorded alongside facial capture to ensure animated characters expressed realistic emotion, and stunt teams worked with animators to choreograph thrilling action sequences involving creepers, skeletons, and endermen. Post-production lasted nearly a year, with visual effects studios rendering massive block-built cities and creature encounters. The final product reflects a labor of love both a tribute to Minecraft’s enduring legacy and a bold leap forward into a new cinematic universe.
+    </p>
+</div>
+
+
+<style>
+  :root {
+    --desc-box-width: 110%;         
+    --desc-box-padding: 20px;      
+    --desc-box-font-size: 1.5rem;  
+    --desc-box-title-size: 1.8rem; 
+  }
+
+  .description-box {
+    background-color: #1a1a1a;
+    color: #fff;
+    width: var(--desc-box-width);
+    padding: var(--desc-box-padding);
+    border-radius: 12px;
+    margin: 30px auto 50px auto;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    font-family: 'Mukta', sans-serif;
+    font-size: var(--desc-box-font-size);
+    line-height: 1.5;
+    text-align: center;
+  }
+
+  .description-box h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: var(--desc-box-title-size);
+    color: #09f109;
+  }
+
+  .description-box {
+  background-color: #262424;
+  padding: 30px;
+  margin: 30px auto;
+  border-radius: 15px;
+  color: #ffffff;
+  max-width: 95%;
+  box-shadow: 0 0 15px rgba(0, 255, 0, 0.3);
+}
+
+.cast-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  margin-top: 20px;
+}
+
+.cast-card {
+  background-color: #353232;
+  padding: 15px;
+  border-radius: 12px;
+  color: white;
+  box-shadow: 0 4px 12px rgba(0, 255, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.cast-card:hover {
+  transform: translateY(-5px);
+}
+
+.cast-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+</style>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

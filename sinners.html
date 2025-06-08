@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Stream Hive</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Mukta&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Mukta', sans-serif;
+      background-color: #353232;
+    }
+
+    .navbar {
+      background-color: #353232;
+    }
+
+    .navbar-brand {
+      font-size: 1.8rem;
+      font-weight: bold;
+      color: rgb(9, 241, 9);
+    }
+
+    .nav-link {
+      font-size: 1.1rem;
+      color: #ffffff;
+      text-decoration: none;
+    }
+
+    .nav-link:hover {
+      color: #007bff;
+    }
+
+    .jumbotron {
+      background-image: url('../In-Class/css/homepage-hero-bg.jpeg');
+      background-position: center;
+      background-size: cover;
+      color: white;
+      text-align: center;
+      padding: 100px 0;
+      margin-bottom: 30px;
+      border-radius: 15px;
+    }
+
+    .jumbotron h1,
+    .jumbotron p {
+      color: rgb(9, 241, 9);
+    }
+
+    .category-card img {
+      width: 220px;
+      height: 420px;
+      object-fit: cover;
+      border-radius: 15px;
+      transition: none !important;
+      transform: none !important;
+    }
+
+    .category-card img:hover {
+      transform: none !important;
+      transition: none !important;
+    }
+
+    .category-card p {
+      font-weight: bold;
+      font-size: 1.2rem;
+      color: #ffffff;
+    }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      background-image: none;
+      width: 3rem;
+      height: 3rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      background-color: transparent;
+      color: rgb(9, 241, 9);
+      font-size: 2rem;
+      font-weight: bold;
+    }
+
+    .carousel-control-prev-icon::before,
+    .carousel-control-next-icon::before {
+      content: '';
+    }
+
+    .carousel-control-prev::after,
+    .carousel-control-next::after {
+      font-size: 3rem;
+      color: rgb(9, 241, 9);
+      font-weight: bold;
+    }
+
+    .carousel-control-prev::after {
+      content: '<';
+    }
+
+    .carousel-control-next::after {
+      content: '>';
+    }
+
+    .custom-row {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .custom-col {
+      flex: 0 0 45%;
+      max-width: 45%;
+    }
+
+    
+    .description-box {
+      background-color: #1a1a1a; 
+      color: #ffffff;            
+      padding: 20px;
+      border-radius: 12px;
+      max-width: 800px;
+      margin: 30px auto 50px auto; 
+      box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+      font-family: 'Mukta', sans-serif;
+      line-height: 1.5;
+      text-align: center;
+    }
+
+    .description-box h3 {
+      margin-top: 0;
+      margin-bottom: 10px;
+      font-weight: 700;
+      font-size: 1.8rem;
+      color: #09f109;  
+    }
+
+    .description-box p {
+      font-size: 1.1rem;
+    }
+
+  </style>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">STREAM HIVE</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="p-5 mb-4 jumbotron" style="background-color: #353232; border-radius: 20px; text-align: center;">
+      <h1 class="display-2" style="font-size: 7.5rem; color: #00ff00; font-weight: 1000; letter-spacing: 1px;">STREAM HIVE</h1>
+    </div>
+    <div class="text-center">
+      <p class="lead" style="font-size: 5.00rem; color: #ffffff; font-weight: 600;">SINNERS</p>
+    </div>
+  </div>
+
+  <div id="tabCarousel" class="carousel slide my-5" data-bs-ride="carousel" data-bs-interval="3000">
+    <div class="carousel-inner">
+
+      <div class="carousel-item active">
+        <div class="custom-row">
+          <div class="custom-col">
+            <div class="category-card text-center">
+              <img src="https://static1.moviewebimages.com/wordpress/wp-content/uploads/2025/01/sinners-michael-b-jordan.jpg" style="width: 80%; height: auto;">
+            </div>
+          </div>
+          <div class="custom-col">
+            <div class="category-card text-center">
+              <img src="https://hips.hearstapps.com/hmg-prod/images/rev-1-grc-14350-high-res-jpeg-6806a944585d9.jpeg?crop=1xw:0.84375xh;0,0.0865xh&amp;resize=1200:*" style="width: 80%; height: auto;">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <div class="custom-row">
+          <div class="custom-col">
+            <div class="category-card text-center">
+              <img src="https://i.imgur.com/fKNwfFB.png" style="width: 72.5%; height: auto;">
+            </div>
+          </div>
+          <div class="custom-col">
+            <div class="category-card text-center">
+              <img src="https://hips.hearstapps.com/hmg-prod/images/sinners-trailer-66f2ba8c24c77.jpg?crop=0.6351851851851852xw:1xh;center,top&amp;resize=1200:*" style="width: 80%; height: auto;">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <div class="custom-row">
+          <div class="custom-col">
+            <div class="category-card text-center">
+              <img src="https://statico.soapcentral.com/editor/2025/04/c4e70-17455364841906.jpg?w=640" jsaction="" class="sFlh5c FyHeAf iPVvYb" style="width: 80%; height: auto;">
+            </div>
+          </div>
+          <div class="custom-col">
+            <div class="category-card text-center">
+              <img src="https://th-i.thgim.com/public/entertainment/movies/8015se/article69464386.ece/alternates/FREE_1200/GomSb9qW0AAXuOk.jpg" style="width: 79.6%; height: auto;">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<div class="text-center">
+  <p class="lead" style="font-size: 5.00rem; color: #ffffff; font-weight: 600;">MOVIE PLOT</p>
+</div>
+
+<div class="description-box">
+  <h3>SINNERS</h3>
+  <p>
+   Sinners opens in a quiet rural town where a devout but deeply divided community is shaken by a series of mysterious events. The story centers on Lily, a rebellious young woman who begins questioning the rigid teachings of the local church led by Pastor Gideon, a charismatic yet secretly corrupt figure. When a childhood friend is found dead under strange circumstances, whispers of sin and punishment begin to spread. As Lily investigates the truth behind the death, she uncovers a hidden history of abuse, fear, and manipulation masked by religious authority. Her quest sets her at odds with powerful figures who label her a danger to the “order of faith.”
+   </p>
+   <p>
+    Tension builds as Lily forms a small group of skeptics who also suspect foul play and systemic corruption within the church. As they dig deeper, they discover a chilling pattern of disappearances and cover-ups that go back decades. Pastor Gideon, feeling his power threatened, manipulates public opinion against them, framing their rebellion as blasphemy. The town becomes divided, with neighbors turning on each other, torn between truth and tradition. Lily faces betrayal from someone close to her, intensifying the stakes. The group manages to obtain damning evidence, but they must now risk everything to bring it to light.
+    </p>
+    <p>
+    In a gripping climax, Lily publicly exposes the truth during a packed Sunday service, using the church’s own pulpit as her platform. Tensions erupt as Gideon attempts to silence her, but townspeople begin to see the cracks in his authority. Law enforcement steps in just as chaos threatens to take over. The corrupt leaders are arrested, and the town begins the painful process of healing. In the aftermath, Lily finds peace not in vengeance, but in rebuilding the community through transparency and compassion. Sinners ends with hope on the horizon, as the town starts to redefine faith through truth rather than fear.
+  </p>
+</div>
+
+<div class="text-center">
+  <p class="lead" style="font-size: 6.00rem; color: #ffffff; font-weight: 600;">MOVIE CAST</p>
+</div>
+
+<div class="description-box">
+  <h3 style="color: #00ff00;">MAIN MOVIE CAST FOR 'SINNERS'</h3>
+  
+  <div class="cast-grid">
+    <div class="cast-card text-center">
+      <img src="https://i.imgur.com/9nqsnlG.png" alt="Micheal B. Jordan as Elijah Moore" style="width: 87.5%; height: auto;">
+      <p><strong>MICHEAL B. JORDAN - ELIJAH MOORE</strong></p>
+    </div>
+
+    <div class="cast-card text-center">
+      <img src="https://i.imgur.com/vwA9zpd.png" alt="Hailee Steinfeld as Mary" style="width: 86.6%; height: auto;">
+      <p><strong>HAILEE STEINFIELD - MARY</strong></p>
+    </div>
+
+    <div class="cast-card text-center">
+      <img src="https://image-prod.iol.co.za/resize/640x64000/Lead-actor-on-Sinners-Miles-Caton-Image-Instagram-milescaton?source=https://iol-prod.appspot.com/image/bf8672692bbe84e27c2f6c9e37534fee39632107/1080&amp;operation=CROP&amp;offset=0x0&amp;resize=1080x608&amp;webp=true" alt="Miles Caton as Samuel" style="width: 94%; height: auto;" >
+      <p><strong>MILES CATON - SAMUEL "SAMMIE"</strong></p>
+    </div>
+
+    <div class="cast-card text-center">
+      <img src="https://cdn.images.express.co.uk/img/dynamic/20/590x/1998213_1.jpg" alt="Jack O'Connell as Remmick" style="width: 84%; height: auto;">
+      <p><strong>JACK O'CONNELL - REMMICK</strong></p>
+    </div>
+
+    <div class="cast-card text-center">
+      <img src="https://www.hollywoodreporter.com/wp-content/uploads/2025/04/WM-Headshot-Ashley-Randall-H-2025.jpg?w=1296" alt="Wunmi Mosaku as Annie" style="width: 94%; height: auto;">
+      <p><strong>WUNMI MOSAKU - ANNIE</strong></p>
+    </div>
+
+    <div class="cast-card text-center">
+      <img src="https://i.imgur.com/4QKzKk5.png" alt="Jayme Lawson as Pearline" style="width: 88%; height: auto;">
+      <p><strong>JAYME LAWSON - PEARLINE</strong></p>
+    </div>
+  </div>
+</div>
+
+<div class="text-center">
+  <p class="lead" style="font-size: 5.00rem; color: #ffffff; font-weight: 600;">MOVIE PRODUCTION</p>
+</div>
+
+<div class="description-box">
+  <h3>THE PRODUCTION FOR 'SINNERS'</h3>
+  <p>
+    The production of Sinners began with a bold creative vision to explore the dark undercurrents of faith and power within a tightly knit community. Filming primarily took place in a small Midwestern town, chosen for its isolated atmosphere and authentic architecture that brought the fictional setting to life. The production team worked closely with local residents to capture a sense of realism and community tension that served as the backbone of the film. The cast underwent intensive rehearsals to embody the emotional weight of their characters, particularly the lead actress who portrayed Lily. Her performance required a delicate balance of vulnerability and strength, which was shaped through weeks of character workshops and discussions with the director.
+   </p>
+   <p>
+    During the middle phase of filming, the crew faced unexpected weather delays and logistical challenges in managing several emotionally intense scenes. Despite the setbacks, the production stayed focused on its goal of delivering a powerful and thought-provoking narrative. The creative team maintained a collaborative environment where actors, writers, and directors could contribute to the evolution of key scenes. The cinematography focused on natural lighting and subtle color tones to reflect the film’s moody and suspenseful tone. By the end of filming, the team felt confident they had created something impactful. Post-production efforts centered on refining the film’s pacing, music, and symbolism to ensure the final cut would leave a lasting impression on audiences.
+    </p>
+</div>
+
+
+<style>
+  :root {
+    --desc-box-width: 110%;         
+    --desc-box-padding: 20px;      
+    --desc-box-font-size: 1.5rem;  
+    --desc-box-title-size: 1.8rem; 
+  }
+
+  .description-box {
+    background-color: #1a1a1a;
+    color: #fff;
+    width: var(--desc-box-width);
+    padding: var(--desc-box-padding);
+    border-radius: 12px;
+    margin: 30px auto 50px auto;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    font-family: 'Mukta', sans-serif;
+    font-size: var(--desc-box-font-size);
+    line-height: 1.5;
+    text-align: center;
+  }
+
+  .description-box h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: var(--desc-box-title-size);
+    color: #09f109;
+  }
+
+  .description-box {
+  background-color: #262424;
+  padding: 30px;
+  margin: 30px auto;
+  border-radius: 15px;
+  color: #ffffff;
+  max-width: 95%;
+  box-shadow: 0 0 15px rgba(0, 255, 0, 0.3);
+}
+
+.cast-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  margin-top: 20px;
+}
+
+.cast-card {
+  background-color: #353232;
+  padding: 15px;
+  border-radius: 12px;
+  color: white;
+  box-shadow: 0 4px 12px rgba(0, 255, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.cast-card:hover {
+  transform: translateY(-5px);
+}
+
+.cast-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+</style>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
